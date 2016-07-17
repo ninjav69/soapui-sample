@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="16736fb8-9bba-401c-a544-15c068862f26" activeEnvironment="Default" name="MemberWS - SOAP test Sample" resourceRoot="" soapui-version="5.2.1" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.actions.iface.tools.soapui.TestRunnerAction@values-local"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="Report Format(s)" value=""/>
+  <con:entry key="Host:Port" value=""/>
+  <con:entry key="Export JUnit Results" value="false"/>
+  <con:entry key="Export All" value="false"/>
+  <con:entry key="Save After" value="false"/>
+  <con:entry key="Add Settings" value="false"/>
+  <con:entry key="WSS Password Type" value=""/>
+  <con:entry key="TestSuite" value="MemberSuite"/>
+  <con:entry key="Endpoint" value=""/>
+  <con:entry key="Select Report Type" value=""/>
+  <con:entry key="System Properties" value=""/>
+  <con:entry key="Password" value=""/>
+  <con:entry key="Print Report" value="false"/>
+  <con:entry key="Open Report" value="false"/>
+  <con:entry key="Export JUnit Results with test properties" value="false"/>
+  <con:entry key="Global Properties" value=""/>
+  <con:entry key="Project Properties" value=""/>
+  <con:entry key="Project Password" value=""/>
+  <con:entry key="TestCase" value="&lt;all>"/>
+  <con:entry key="Username" value=""/>
+  <con:entry key="user-settings.xml Password" value=""/>
+  <con:entry key="TestRunner Path" value=""/>
+  <con:entry key="Environment" value="Default"/>
+  <con:entry key="Coverage Report" value="false"/>
+  <con:entry key="Enable UI" value="false"/>
+  <con:entry key="Root Folder" value=""/>
+  <con:entry key="Ignore Errors" value="false"/>
+  <con:entry key="Domain" value=""/>
+  <con:entry key="Tool Args" value=""/>
+  <con:entry key="Save Project" value="false"/>
+</xml-fragment>]]></con:setting></con:settings><con:interface xsi:type="con:WsdlInterface" id="21266e19-e488-4816-9b0d-50b700a2ccef" wsaVersion="NONE" name="MemberWSSoapBinding" type="wsdl" bindingName="{http://soap.sample.ninjav.org/}MemberWSSoapBinding" soapVersion="1_1" anonymous="optional" definition="http://localhost:8080/SampleSOAPApp/MemberWS?wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="http://localhost:8080/SampleSOAPApp/MemberWS?wsdl"><con:part><con:url>http://localhost:8080/SampleSOAPApp/MemberWS?wsdl</con:url><con:content><![CDATA[<wsdl:definitions name="MemberWS" targetNamespace="http://soap.sample.ninjav.org/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://soap.sample.ninjav.org/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:ns1="http://schemas.xmlsoap.org/soap/http">
+  <wsdl:types>
+    <xs:schema attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="http://soap.sample.ninjav.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="listAllMembers" type="tns:listAllMembers"/>
+      <xs:element name="listAllMembersResponse" type="tns:listAllMembersResponse"/>
+      <xs:element name="member" type="tns:member"/>
+      <xs:element name="register" type="tns:register"/>
+      <xs:element name="registerResponse" type="tns:registerResponse"/>
+      <xs:complexType name="listAllMembers">
+        <xs:sequence/>
+      </xs:complexType>
+      <xs:complexType name="listAllMembersResponse">
+        <xs:sequence>
+          <xs:element maxOccurs="unbounded" minOccurs="0" name="members" type="tns:member"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="member">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="email" type="xs:string"/>
+          <xs:element minOccurs="0" name="id" type="xs:long"/>
+          <xs:element minOccurs="0" name="name" type="xs:string"/>
+          <xs:element minOccurs="0" name="phoneNumber" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="register">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="arg0" type="tns:member"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="registerResponse">
+        <xs:sequence/>
+      </xs:complexType>
+      <xs:element name="Exception" type="tns:Exception"/>
+      <xs:complexType name="Exception">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="message" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="listAllMembers">
+    <wsdl:part element="tns:listAllMembers" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="listAllMembersResponse">
+    <wsdl:part element="tns:listAllMembersResponse" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="registerResponse">
+    <wsdl:part element="tns:registerResponse" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="register">
+    <wsdl:part element="tns:register" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="Exception">
+    <wsdl:part element="tns:Exception" name="Exception"></wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="MemberWS">
+    <wsdl:operation name="listAllMembers">
+      <wsdl:input message="tns:listAllMembers" name="listAllMembers"></wsdl:input>
+      <wsdl:output message="tns:listAllMembersResponse" name="listAllMembersResponse"></wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="register">
+      <wsdl:input message="tns:register" name="register"></wsdl:input>
+      <wsdl:output message="tns:registerResponse" name="registerResponse"></wsdl:output>
+      <wsdl:fault message="tns:Exception" name="Exception"></wsdl:fault>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="MemberWSSoapBinding" type="tns:MemberWS">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="listAllMembers">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="listAllMembers">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="listAllMembersResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="register">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="register">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="registerResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="Exception">
+        <soap:fault name="Exception" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="MemberWS">
+    <wsdl:port binding="tns:MemberWSSoapBinding" name="MemberWSPort">
+      <soap:address location="http://monster:8080/SampleSOAPApp/MemberWS"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://monster:8080/SampleSOAPApp/MemberWS</con:endpoint></con:endpoints><con:operation id="e023a47d-99c5-4c95-8d23-301c37039597" isOneWay="false" action="" name="listAllMembers" bindingOperationName="listAllMembers" type="Request-Response" outputName="listAllMembersResponse" inputName="listAllMembers" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="e489f739-3e20-49b9-8a9f-18631c280de7" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://monster:8080/SampleSOAPApp/MemberWS</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:soap="http://soap.sample.ninjav.org/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <soap:listAllMembers/>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://soap.sample.ninjav.org/MemberWS/listAllMembers"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="24fb9c7a-260f-4048-a9a5-4d79a120f528" isOneWay="false" action="" name="register" bindingOperationName="register" type="Request-Response" outputName="registerResponse" inputName="register" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="8095cea3-6b58-441c-9ab8-827a3d2953dc" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://monster:8080/SampleSOAPApp/MemberWS</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:soap="http://soap.sample.ninjav.org/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <soap:register>
+         <!--Optional:-->
+         <arg0>
+            <!--Optional:-->
+            <email>jan@mweb.com</email>
+            <!--Optional:-->
+            <!--Optional:-->
+            <name>Jan</name>
+            <!--Optional:-->
+            <phoneNumber>01234546789</phoneNumber>
+         </arg0>
+      </soap:register>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://soap.sample.ninjav.org/MemberWS/register"/><con:wsrmConfig version="1.2"/></con:call></con:operation></con:interface><con:testSuite id="28b375b3-1aef-42c2-b15b-34e87c5301a7" name="MemberSuite"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.panels.testcase.JTestRunLog$OptionsForm@max_rows">1000</con:setting><con:setting id="com.eviware.soapui.impl.wsdl.panels.testcase.JTestRunLog$OptionsForm@errors_only">false</con:setting></con:settings><con:runType>SEQUENTIAL</con:runType><con:testCase id="524a9d88-c5ad-4125-97f1-a1da1c290de3" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="givenMembers_canFindMembers" searchProperties="true"><con:settings/><con:testStep type="jdbc" name="Clear Database" id="e9edd698-930c-4094-b1ec-9da046f812c6"><con:settings/><con:config xsi:type="con:JdbcRequestTestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:driver>com.mysql.jdbc.Driver</con:driver><con:connectionString>jdbc:mysql://localhost:3306/mysql?user=root&amp;password=wopniep</con:connectionString><con:query>delete from Member
+</con:query><con:properties/></con:config></con:testStep><con:testStep type="jdbc" name="Seed Database" id="245e36ac-4f44-4647-a62f-948d3d5c9523"><con:settings/><con:config xsi:type="con:JdbcRequestTestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:driver>com.mysql.jdbc.Driver</con:driver><con:connectionString>jdbc:mysql://localhost:3306/mysql?user=root&amp;password=wopniep</con:connectionString><con:query>insert into Member (id, name, email, phone_number) values (0, 'John Smith', 'john.smith@mailinator.com', '2125551212') </con:query><con:properties/></con:config></con:testStep><con:testStep type="request" name="ListAllMembers" id="7808c400-8132-41d4-a275-9cd1638b9d49"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>MemberWSSoapBinding</con:interface><con:operation>listAllMembers</con:operation><con:request name="ListAllMembers" id="1d1436a8-e643-433f-8e68-0307667c8848"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://monster:8080/SampleSOAPApp/MemberWS</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:soap="http://soap.sample.ninjav.org/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <soap:listAllMembers/>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="95f03d2b-862b-44c6-a436-365877796c25"/><con:assertion type="Schema Compliance" id="38022af0-b719-4671-9069-4611e3dc3f53"><con:configuration/></con:assertion><con:assertion type="SOAP Fault Assertion" id="06dbcf09-4ede-4e15-9375-e2709dd7ff54"/><con:assertion type="GroovyScriptAssertion" id="0d3c32a0-db84-420c-ac4b-b176681df785" name="Script Assertion"><con:configuration><scriptText>import com.eviware.soapui.support.XmlHolder
+
+def holder = new XmlHolder(messageExchange.responseContentAsXml)
+
+assert holder["//members"] != null
+</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="91af0268-a104-4d3e-9888-f06453b12c5d" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="givenValidMember_canAddMember" searchProperties="true"><con:settings/><con:testStep type="jdbc" name="Clear Database" id="545a1f2e-e10a-47ee-89ab-faa4e0ee28fe"><con:settings/><con:config xsi:type="con:JdbcRequestTestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:driver>com.mysql.jdbc.Driver</con:driver><con:connectionString>jdbc:mysql://localhost:3306/mysql?user=root&amp;password=wopniep</con:connectionString><con:query>delete from Member</con:query><con:properties/></con:config></con:testStep><con:testStep type="properties" name="Given" id="b457a385-5878-4e35-82f8-d84d8e370a79"><con:settings/><con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:properties><con:property><con:name>name</con:name><con:value>Alan Pickard</con:value></con:property><con:property><con:name>email</con:name><con:value>al.ninjav@gmail.com</con:value></con:property><con:property><con:name>phone</con:name><con:value>0820636760</con:value></con:property></con:properties></con:config></con:testStep><con:testStep type="request" name="RegisterMember" id="cf0adceb-3025-4660-9db6-7720584fbaf9"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>MemberWSSoapBinding</con:interface><con:operation>register</con:operation><con:request name="RegisterMember" id="f46f3789-eb15-4490-b651-64e1805c9f71"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://monster:8080/SampleSOAPApp/MemberWS</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:soap="http://soap.sample.ninjav.org/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <soap:register>
+         <arg0>
+            <email>${email}</email>
+            <name>${name}</name>
+            <phoneNumber>${phone}</phoneNumber>
+         </arg0>
+      </soap:register>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="aee079d2-2f9b-4cb7-8e0f-9d8ce3e98833"/><con:assertion type="Schema Compliance" id="3e1d00da-d995-4ffd-89d3-d746adefef6c"><con:configuration/></con:assertion><con:assertion type="SOAP Fault Assertion" id="eb4bdb98-5ebc-46ef-a74c-144af0408cb1"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="groovy" name="Show Context" id="723a3a25-0613-4787-8d9f-f4ec710d06a2"><con:settings/><con:config><script>def name = testRunner.testCase.getPropertyValue("name")
+def email = testRunner.testCase.getPropertyValue("email")
+def phone = testRunner.testCase.getPropertyValue("phone")
+
+log.info "Name: ${name} Email: ${email} Phone: ${phone}"
+
+
+</script></con:config></con:testStep><con:testStep type="groovy" name="Validate Content" id="1a237761-3a1f-403a-93b4-2bded7b87896"><con:settings/><con:config><script>import groovy.sql.Sql
+
+def dbpath = 'jdbc:mysql://localhost:3306/mysql';
+def dbuser = 'root';
+def dbpass = 'wopniep'
+def dbdriver = 'com.mysql.jdbc.Driver'
+
+def sql = Sql.newInstance(dbpath, dbuser, dbpass, dbdriver)
+
+def res = sql.firstRow('select * from Member')
+
+assert res != null &amp;&amp; res[0] != null
+</script></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/></con:soapui-project>

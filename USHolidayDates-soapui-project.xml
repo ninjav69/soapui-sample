@@ -1,0 +1,2387 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="9c2b2b50-0356-4bf1-8757-ffbf2bf191bb" activeEnvironment="Default" name="USHolidayDates" resourceRoot="" soapui-version="5.2.1" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="813ca786-e329-420c-a95c-9f7082406d8e" wsaVersion="NONE" name="USHolidayDatesSoap12" type="wsdl" bindingName="{http://www.27seconds.com/Holidays/US/Dates/}USHolidayDatesSoap12" soapVersion="1_2" anonymous="optional" definition="http://www.holidaywebservice.com/Holidays/US/Dates/USHolidayDates.asmx?WSDL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>http://www.holidaywebservice.com/Holidays/US/Dates/USHolidayDates.asmx</con:endpoint></con:endpoints><con:operation id="8f736710-9d34-4a13-946c-72fd9aef80df" isOneWay="false" action="http://www.27seconds.com/Holidays/US/Dates/GetAbrahamLincolnsBirthday" name="GetAbrahamLincolnsBirthday" bindingOperationName="GetAbrahamLincolnsBirthday" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="f3603e98-d87a-4178-ad8b-8cd48733e592" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.holidaywebservice.com/Holidays/US/Dates/USHolidayDates.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:dat="http://www.27seconds.com/Holidays/US/Dates/">
+   <soap:Header/>
+   <soap:Body>
+      <dat:GetAbrahamLincolnsBirthday>
+         <dat:year>?</dat:year>
+      </dat:GetAbrahamLincolnsBirthday>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.27seconds.com/Holidays/US/Dates/USHolidayDatesSoap/GetAbrahamLincolnsBirthdayRequest"/></con:call></con:operation><con:operation id="d66f1b64-634a-4c50-973b-859c83812b2f" isOneWay="false" action="http://www.27seconds.com/Holidays/US/Dates/GetAprilFoolsDay" name="GetAprilFoolsDay" bindingOperationName="GetAprilFoolsDay" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="54455a29-b535-4579-a1c0-ed9c1a1e467c" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.holidaywebservice.com/Holidays/US/Dates/USHolidayDates.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:dat="http://www.27seconds.com/Holidays/US/Dates/">
+   <soap:Header/>
+   <soap:Body>
+      <dat:GetAprilFoolsDay>
+         <dat:year>?</dat:year>
+      </dat:GetAprilFoolsDay>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.27seconds.com/Holidays/US/Dates/USHolidayDatesSoap/GetAprilFoolsDayRequest"/></con:call></con:operation><con:operation id="56998cac-0c1a-4475-85e9-322939638862" isOneWay="false" action="http://www.27seconds.com/Holidays/US/Dates/GetBlackFriday" name="GetBlackFriday" bindingOperationName="GetBlackFriday" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="549a9bfd-d63f-44c5-b708-a57a669b0769" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.holidaywebservice.com/Holidays/US/Dates/USHolidayDates.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:dat="http://www.27seconds.com/Holidays/US/Dates/">
+   <soap:Header/>
+   <soap:Body>
+      <dat:GetBlackFriday>
+         <dat:year>?</dat:year>
+      </dat:GetBlackFriday>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.27seconds.com/Holidays/US/Dates/USHolidayDatesSoap/GetBlackFridayRequest"/></con:call></con:operation><con:operation id="c468ffca-486d-48c0-8d3f-b861c8cc7656" isOneWay="false" action="http://www.27seconds.com/Holidays/US/Dates/GetChristmasDay" name="GetChristmasDay" bindingOperationName="GetChristmasDay" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="937436e3-6317-46b7-8ba3-e99baf90b3f4" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.holidaywebservice.com/Holidays/US/Dates/USHolidayDates.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:dat="http://www.27seconds.com/Holidays/US/Dates/">
+   <soap:Header/>
+   <soap:Body>
+      <dat:GetChristmasDay>
+         <dat:year>?</dat:year>
+      </dat:GetChristmasDay>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.27seconds.com/Holidays/US/Dates/USHolidayDatesSoap/GetChristmasDayRequest"/></con:call></con:operation><con:operation id="73167d99-bddb-4597-b198-bc4e4b9cb8df" isOneWay="false" action="http://www.27seconds.com/Holidays/US/Dates/GetCincoDeMayo" name="GetCincoDeMayo" bindingOperationName="GetCincoDeMayo" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="4484b82b-eda0-4d9f-bb6f-85b90c73ae86" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.holidaywebservice.com/Holidays/US/Dates/USHolidayDates.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:dat="http://www.27seconds.com/Holidays/US/Dates/">
+   <soap:Header/>
+   <soap:Body>
+      <dat:GetCincoDeMayo>
+         <dat:year>?</dat:year>
+      </dat:GetCincoDeMayo>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.27seconds.com/Holidays/US/Dates/USHolidayDatesSoap/GetCincoDeMayoRequest"/></con:call></con:operation><con:operation id="45cd5873-80af-4824-a02d-af3e875ed89a" isOneWay="false" action="http://www.27seconds.com/Holidays/US/Dates/GetColumbusDay" name="GetColumbusDay" bindingOperationName="GetColumbusDay" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="d6b02763-e4c7-454d-9b77-99c1d22b83ac" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.holidaywebservice.com/Holidays/US/Dates/USHolidayDates.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:dat="http://www.27seconds.com/Holidays/US/Dates/">
+   <soap:Header/>
+   <soap:Body>
+      <dat:GetColumbusDay>
+         <dat:year>?</dat:year>
+      </dat:GetColumbusDay>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.27seconds.com/Holidays/US/Dates/USHolidayDatesSoap/GetColumbusDayRequest"/></con:call></con:operation><con:operation id="c4e3d946-bf96-4d27-ad0e-dc9bf81cfbe8" isOneWay="false" action="http://www.27seconds.com/Holidays/US/Dates/GetEaster" name="GetEaster" bindingOperationName="GetEaster" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="23ad3689-c909-435a-919d-33e1a7d1ddf8" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.holidaywebservice.com/Holidays/US/Dates/USHolidayDates.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:dat="http://www.27seconds.com/Holidays/US/Dates/">
+   <soap:Header/>
+   <soap:Body>
+      <dat:GetEaster>
+         <dat:year>?</dat:year>
+      </dat:GetEaster>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.27seconds.com/Holidays/US/Dates/USHolidayDatesSoap/GetEasterRequest"/></con:call></con:operation><con:operation id="b9d28398-3815-4f2d-8a83-c7abb9d8eccf" isOneWay="false" action="http://www.27seconds.com/Holidays/US/Dates/GetFathersDay" name="GetFathersDay" bindingOperationName="GetFathersDay" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="ca2a3688-5d57-42d4-9271-1cc930bba2d2" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.holidaywebservice.com/Holidays/US/Dates/USHolidayDates.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:dat="http://www.27seconds.com/Holidays/US/Dates/">
+   <soap:Header/>
+   <soap:Body>
+      <dat:GetFathersDay>
+         <dat:year>?</dat:year>
+      </dat:GetFathersDay>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.27seconds.com/Holidays/US/Dates/USHolidayDatesSoap/GetFathersDayRequest"/></con:call></con:operation><con:operation id="67c71734-6d6c-495f-a67c-b3b3940ba490" isOneWay="false" action="http://www.27seconds.com/Holidays/US/Dates/GetFlagDay" name="GetFlagDay" bindingOperationName="GetFlagDay" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="abc55cc9-a496-4b71-9651-a6c0d5217e3f" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.holidaywebservice.com/Holidays/US/Dates/USHolidayDates.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:dat="http://www.27seconds.com/Holidays/US/Dates/">
+   <soap:Header/>
+   <soap:Body>
+      <dat:GetFlagDay>
+         <dat:year>?</dat:year>
+      </dat:GetFlagDay>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.27seconds.com/Holidays/US/Dates/USHolidayDatesSoap/GetFlagDayRequest"/></con:call></con:operation><con:operation id="c0924999-94ae-4f64-b4ba-ce207d2d3f13" isOneWay="false" action="http://www.27seconds.com/Holidays/US/Dates/GetGeorgeWashingtonsBirthday" name="GetGeorgeWashingtonsBirthday" bindingOperationName="GetGeorgeWashingtonsBirthday" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="84d1376b-92e0-49c9-982b-cc6507ac620d" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.holidaywebservice.com/Holidays/US/Dates/USHolidayDates.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:dat="http://www.27seconds.com/Holidays/US/Dates/">
+   <soap:Header/>
+   <soap:Body>
+      <dat:GetGeorgeWashingtonsBirthday>
+         <dat:year>?</dat:year>
+      </dat:GetGeorgeWashingtonsBirthday>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.27seconds.com/Holidays/US/Dates/USHolidayDatesSoap/GetGeorgeWashingtonsBirthdayRequest"/></con:call></con:operation><con:operation id="fb8a2b7c-6cfe-45f1-a6fc-270f7e257c3e" isOneWay="false" action="http://www.27seconds.com/Holidays/US/Dates/GetGoodFriday" name="GetGoodFriday" bindingOperationName="GetGoodFriday" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="16f025b9-34b3-4319-9f80-df5e8367b7f7" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.holidaywebservice.com/Holidays/US/Dates/USHolidayDates.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:dat="http://www.27seconds.com/Holidays/US/Dates/">
+   <soap:Header/>
+   <soap:Body>
+      <dat:GetGoodFriday>
+         <dat:year>?</dat:year>
+      </dat:GetGoodFriday>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.27seconds.com/Holidays/US/Dates/USHolidayDatesSoap/GetGoodFridayRequest"/></con:call></con:operation><con:operation id="e67cac9d-52bc-45b8-9bc3-8696db2dacfc" isOneWay="false" action="http://www.27seconds.com/Holidays/US/Dates/GetHalloweenDay" name="GetHalloweenDay" bindingOperationName="GetHalloweenDay" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="bfb1cd4b-fccd-41f0-b67d-c500314f2c9e" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.holidaywebservice.com/Holidays/US/Dates/USHolidayDates.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:dat="http://www.27seconds.com/Holidays/US/Dates/">
+   <soap:Header/>
+   <soap:Body>
+      <dat:GetHalloweenDay>
+         <dat:year>?</dat:year>
+      </dat:GetHalloweenDay>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.27seconds.com/Holidays/US/Dates/USHolidayDatesSoap/GetHalloweenDayRequest"/></con:call></con:operation><con:operation id="51284dd2-bcf0-4e14-8a46-3deb0c5fbeed" isOneWay="false" action="http://www.27seconds.com/Holidays/US/Dates/GetIndependenceDay" name="GetIndependenceDay" bindingOperationName="GetIndependenceDay" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="a8e33c90-3598-40bb-abb6-c2e92b6a4a9f" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.holidaywebservice.com/Holidays/US/Dates/USHolidayDates.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:dat="http://www.27seconds.com/Holidays/US/Dates/">
+   <soap:Header/>
+   <soap:Body>
+      <dat:GetIndependenceDay>
+         <dat:year>?</dat:year>
+      </dat:GetIndependenceDay>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.27seconds.com/Holidays/US/Dates/USHolidayDatesSoap/GetIndependenceDayRequest"/></con:call></con:operation><con:operation id="7cc72437-5534-42e6-aa88-fbdacc3561ae" isOneWay="false" action="http://www.27seconds.com/Holidays/US/Dates/GetLaborDay" name="GetLaborDay" bindingOperationName="GetLaborDay" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="53753961-a686-45c4-a368-deddbf466c81" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.holidaywebservice.com/Holidays/US/Dates/USHolidayDates.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:dat="http://www.27seconds.com/Holidays/US/Dates/">
+   <soap:Header/>
+   <soap:Body>
+      <dat:GetLaborDay>
+         <dat:year>?</dat:year>
+      </dat:GetLaborDay>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.27seconds.com/Holidays/US/Dates/USHolidayDatesSoap/GetLaborDayRequest"/></con:call></con:operation><con:operation id="5140444e-16c3-4fb8-89d6-8fe592cc45a6" isOneWay="false" action="http://www.27seconds.com/Holidays/US/Dates/GetMartinLutherKingDay" name="GetMartinLutherKingDay" bindingOperationName="GetMartinLutherKingDay" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="fa88c72f-aa48-4dc1-911a-e74c8455abc0" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.holidaywebservice.com/Holidays/US/Dates/USHolidayDates.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:dat="http://www.27seconds.com/Holidays/US/Dates/">
+   <soap:Header/>
+   <soap:Body>
+      <dat:GetMartinLutherKingDay>
+         <dat:year>?</dat:year>
+      </dat:GetMartinLutherKingDay>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.27seconds.com/Holidays/US/Dates/USHolidayDatesSoap/GetMartinLutherKingDayRequest"/></con:call></con:operation><con:operation id="1e5b09b7-6bfc-49c7-9392-2dc16d363338" isOneWay="false" action="http://www.27seconds.com/Holidays/US/Dates/GetMemorialDay" name="GetMemorialDay" bindingOperationName="GetMemorialDay" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="a98ffa31-4bcc-4ca6-a3d3-52aebcbad233" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.holidaywebservice.com/Holidays/US/Dates/USHolidayDates.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:dat="http://www.27seconds.com/Holidays/US/Dates/">
+   <soap:Header/>
+   <soap:Body>
+      <dat:GetMemorialDay>
+         <dat:year>?</dat:year>
+      </dat:GetMemorialDay>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.27seconds.com/Holidays/US/Dates/USHolidayDatesSoap/GetMemorialDayRequest"/></con:call></con:operation><con:operation id="d4fc04bc-342c-4a4f-bbbb-244d127b2a4e" isOneWay="false" action="http://www.27seconds.com/Holidays/US/Dates/GetMothersDay" name="GetMothersDay" bindingOperationName="GetMothersDay" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="ace6a474-f410-4549-9c59-b99b9daf9b9a" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.holidaywebservice.com/Holidays/US/Dates/USHolidayDates.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:dat="http://www.27seconds.com/Holidays/US/Dates/">
+   <soap:Header/>
+   <soap:Body>
+      <dat:GetMothersDay>
+         <dat:year>?</dat:year>
+      </dat:GetMothersDay>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.27seconds.com/Holidays/US/Dates/USHolidayDatesSoap/GetMothersDayRequest"/></con:call></con:operation><con:operation id="7b8b1f4a-cdc4-4c89-8670-928996561963" isOneWay="false" action="http://www.27seconds.com/Holidays/US/Dates/GetNewYear" name="GetNewYear" bindingOperationName="GetNewYear" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="16c71ee7-cdc1-4e3a-8f2e-a17a2bfd4a75" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.holidaywebservice.com/Holidays/US/Dates/USHolidayDates.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:dat="http://www.27seconds.com/Holidays/US/Dates/">
+   <soap:Header/>
+   <soap:Body>
+      <dat:GetNewYear>
+         <dat:year>?</dat:year>
+      </dat:GetNewYear>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.27seconds.com/Holidays/US/Dates/USHolidayDatesSoap/GetNewYearRequest"/></con:call></con:operation><con:operation id="a77c6d29-af53-4b3b-8fa0-eac6fc298e65" isOneWay="false" action="http://www.27seconds.com/Holidays/US/Dates/GetNewYearsEve" name="GetNewYearsEve" bindingOperationName="GetNewYearsEve" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="60916cda-245d-4d6a-b051-7871faa7011a" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.holidaywebservice.com/Holidays/US/Dates/USHolidayDates.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:dat="http://www.27seconds.com/Holidays/US/Dates/">
+   <soap:Header/>
+   <soap:Body>
+      <dat:GetNewYearsEve>
+         <dat:year>?</dat:year>
+      </dat:GetNewYearsEve>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.27seconds.com/Holidays/US/Dates/USHolidayDatesSoap/GetNewYearsEveRequest"/></con:call></con:operation><con:operation id="955b6188-0fd3-4a35-98f7-be25cbb09b2c" isOneWay="false" action="http://www.27seconds.com/Holidays/US/Dates/GetPresidentsDay" name="GetPresidentsDay" bindingOperationName="GetPresidentsDay" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="43662da7-c6ae-4afc-82a7-0ecde8b5b52b" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.holidaywebservice.com/Holidays/US/Dates/USHolidayDates.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:dat="http://www.27seconds.com/Holidays/US/Dates/">
+   <soap:Header/>
+   <soap:Body>
+      <dat:GetPresidentsDay>
+         <dat:year>?</dat:year>
+      </dat:GetPresidentsDay>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.27seconds.com/Holidays/US/Dates/USHolidayDatesSoap/GetPresidentsDayRequest"/></con:call></con:operation><con:operation id="090b24c3-4fdd-47ff-8ba8-af486a364ac6" isOneWay="false" action="http://www.27seconds.com/Holidays/US/Dates/GetSaintPatricksDay" name="GetSaintPatricksDay" bindingOperationName="GetSaintPatricksDay" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="7429bebd-a9b6-499e-b130-1a679821a39a" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.holidaywebservice.com/Holidays/US/Dates/USHolidayDates.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:dat="http://www.27seconds.com/Holidays/US/Dates/">
+   <soap:Header/>
+   <soap:Body>
+      <dat:GetSaintPatricksDay>
+         <dat:year>?</dat:year>
+      </dat:GetSaintPatricksDay>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.27seconds.com/Holidays/US/Dates/USHolidayDatesSoap/GetSaintPatricksDayRequest"/></con:call></con:operation><con:operation id="9f3218de-e9f6-4f89-b1b3-a2943aba3cbd" isOneWay="false" action="http://www.27seconds.com/Holidays/US/Dates/GetThanksgivingDay" name="GetThanksgivingDay" bindingOperationName="GetThanksgivingDay" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="02169f79-e614-4ae6-a513-f6ffad5f05d9" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.holidaywebservice.com/Holidays/US/Dates/USHolidayDates.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:dat="http://www.27seconds.com/Holidays/US/Dates/">
+   <soap:Header/>
+   <soap:Body>
+      <dat:GetThanksgivingDay>
+         <dat:year>?</dat:year>
+      </dat:GetThanksgivingDay>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.27seconds.com/Holidays/US/Dates/USHolidayDatesSoap/GetThanksgivingDayRequest"/></con:call></con:operation><con:operation id="76c1cff5-60f5-4aec-ab1a-f5fb03b64990" isOneWay="false" action="http://www.27seconds.com/Holidays/US/Dates/GetValentinesDay" name="GetValentinesDay" bindingOperationName="GetValentinesDay" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="431db6f8-24de-4cc2-9aa3-874e3661e383" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.holidaywebservice.com/Holidays/US/Dates/USHolidayDates.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:dat="http://www.27seconds.com/Holidays/US/Dates/">
+   <soap:Header/>
+   <soap:Body>
+      <dat:GetValentinesDay>
+         <dat:year>?</dat:year>
+      </dat:GetValentinesDay>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.27seconds.com/Holidays/US/Dates/USHolidayDatesSoap/GetValentinesDayRequest"/></con:call></con:operation><con:operation id="e94cfd1b-6c50-4c04-96ec-0e3072411c6a" isOneWay="false" action="http://www.27seconds.com/Holidays/US/Dates/GetVeteransDay" name="GetVeteransDay" bindingOperationName="GetVeteransDay" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="fb5537d8-d273-45c6-95dd-6ac732baa034" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.holidaywebservice.com/Holidays/US/Dates/USHolidayDates.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:dat="http://www.27seconds.com/Holidays/US/Dates/">
+   <soap:Header/>
+   <soap:Body>
+      <dat:GetVeteransDay>
+         <dat:year>?</dat:year>
+      </dat:GetVeteransDay>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.27seconds.com/Holidays/US/Dates/USHolidayDatesSoap/GetVeteransDayRequest"/></con:call></con:operation></con:interface><con:interface xsi:type="con:WsdlInterface" id="aef1bc07-8d47-4bbf-8b5f-3c68d2e36c5a" wsaVersion="NONE" name="USHolidayDatesSoap" type="wsdl" bindingName="{http://www.27seconds.com/Holidays/US/Dates/}USHolidayDatesSoap" soapVersion="1_1" anonymous="optional" definition="http://www.holidaywebservice.com/Holidays/US/Dates/USHolidayDates.asmx?WSDL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="http://www.holidaywebservice.com/Holidays/US/Dates/USHolidayDates.asmx?WSDL"><con:part><con:url>http://www.holidaywebservice.com/Holidays/US/Dates/USHolidayDates.asmx?WSDL</con:url><con:content><![CDATA[<wsdl:definitions targetNamespace="http://www.27seconds.com/Holidays/US/Dates/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.27seconds.com/Holidays/US/Dates/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:documentation>Web service that calculates specific national holidays for the US.</wsdl:documentation>
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://www.27seconds.com/Holidays/US/Dates/">
+      <s:element name="GetNewYear">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="year" type="s:int"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetNewYearResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetNewYearResult" type="s:dateTime"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetMartinLutherKingDay">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="year" type="s:int"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetMartinLutherKingDayResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetMartinLutherKingDayResult" type="s:dateTime"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPresidentsDay">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="year" type="s:int"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPresidentsDayResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetPresidentsDayResult" type="s:dateTime"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAbrahamLincolnsBirthday">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="year" type="s:int"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAbrahamLincolnsBirthdayResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetAbrahamLincolnsBirthdayResult" type="s:dateTime"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetValentinesDay">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="year" type="s:int"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetValentinesDayResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetValentinesDayResult" type="s:dateTime"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetGeorgeWashingtonsBirthday">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="year" type="s:int"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetGeorgeWashingtonsBirthdayResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetGeorgeWashingtonsBirthdayResult" type="s:dateTime"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetGoodFriday">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="year" type="s:int"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetGoodFridayResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetGoodFridayResult" type="s:dateTime"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetEaster">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="year" type="s:int"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetEasterResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetEasterResult" type="s:dateTime"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSaintPatricksDay">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="year" type="s:int"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSaintPatricksDayResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetSaintPatricksDayResult" type="s:dateTime"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAprilFoolsDay">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="year" type="s:int"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAprilFoolsDayResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetAprilFoolsDayResult" type="s:dateTime"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetMothersDay">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="year" type="s:int"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetMothersDayResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetMothersDayResult" type="s:dateTime"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetMemorialDay">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="year" type="s:int"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetMemorialDayResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetMemorialDayResult" type="s:dateTime"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCincoDeMayo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="year" type="s:int"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCincoDeMayoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetCincoDeMayoResult" type="s:dateTime"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetFathersDay">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="year" type="s:int"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetFathersDayResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetFathersDayResult" type="s:dateTime"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetFlagDay">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="year" type="s:int"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetFlagDayResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetFlagDayResult" type="s:dateTime"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetIndependenceDay">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="year" type="s:int"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetIndependenceDayResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetIndependenceDayResult" type="s:dateTime"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetLaborDay">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="year" type="s:int"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetLaborDayResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetLaborDayResult" type="s:dateTime"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetColumbusDay">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="year" type="s:int"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetColumbusDayResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetColumbusDayResult" type="s:dateTime"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetHalloweenDay">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="year" type="s:int"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetHalloweenDayResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetHalloweenDayResult" type="s:dateTime"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetThanksgivingDay">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="year" type="s:int"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetThanksgivingDayResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetThanksgivingDayResult" type="s:dateTime"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetBlackFriday">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="year" type="s:int"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetBlackFridayResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetBlackFridayResult" type="s:dateTime"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetVeteransDay">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="year" type="s:int"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetVeteransDayResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetVeteransDayResult" type="s:dateTime"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetChristmasDay">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="year" type="s:int"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetChristmasDayResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetChristmasDayResult" type="s:dateTime"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetNewYearsEve">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="year" type="s:int"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetNewYearsEveResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetNewYearsEveResult" type="s:dateTime"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="dateTime" type="s:dateTime"/>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetNewYearSoapIn">
+    <wsdl:part name="parameters" element="tns:GetNewYear"/>
+  </wsdl:message>
+  <wsdl:message name="GetNewYearSoapOut">
+    <wsdl:part name="parameters" element="tns:GetNewYearResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetMartinLutherKingDaySoapIn">
+    <wsdl:part name="parameters" element="tns:GetMartinLutherKingDay"/>
+  </wsdl:message>
+  <wsdl:message name="GetMartinLutherKingDaySoapOut">
+    <wsdl:part name="parameters" element="tns:GetMartinLutherKingDayResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetPresidentsDaySoapIn">
+    <wsdl:part name="parameters" element="tns:GetPresidentsDay"/>
+  </wsdl:message>
+  <wsdl:message name="GetPresidentsDaySoapOut">
+    <wsdl:part name="parameters" element="tns:GetPresidentsDayResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetAbrahamLincolnsBirthdaySoapIn">
+    <wsdl:part name="parameters" element="tns:GetAbrahamLincolnsBirthday"/>
+  </wsdl:message>
+  <wsdl:message name="GetAbrahamLincolnsBirthdaySoapOut">
+    <wsdl:part name="parameters" element="tns:GetAbrahamLincolnsBirthdayResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetValentinesDaySoapIn">
+    <wsdl:part name="parameters" element="tns:GetValentinesDay"/>
+  </wsdl:message>
+  <wsdl:message name="GetValentinesDaySoapOut">
+    <wsdl:part name="parameters" element="tns:GetValentinesDayResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetGeorgeWashingtonsBirthdaySoapIn">
+    <wsdl:part name="parameters" element="tns:GetGeorgeWashingtonsBirthday"/>
+  </wsdl:message>
+  <wsdl:message name="GetGeorgeWashingtonsBirthdaySoapOut">
+    <wsdl:part name="parameters" element="tns:GetGeorgeWashingtonsBirthdayResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetGoodFridaySoapIn">
+    <wsdl:part name="parameters" element="tns:GetGoodFriday"/>
+  </wsdl:message>
+  <wsdl:message name="GetGoodFridaySoapOut">
+    <wsdl:part name="parameters" element="tns:GetGoodFridayResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetEasterSoapIn">
+    <wsdl:part name="parameters" element="tns:GetEaster"/>
+  </wsdl:message>
+  <wsdl:message name="GetEasterSoapOut">
+    <wsdl:part name="parameters" element="tns:GetEasterResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetSaintPatricksDaySoapIn">
+    <wsdl:part name="parameters" element="tns:GetSaintPatricksDay"/>
+  </wsdl:message>
+  <wsdl:message name="GetSaintPatricksDaySoapOut">
+    <wsdl:part name="parameters" element="tns:GetSaintPatricksDayResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetAprilFoolsDaySoapIn">
+    <wsdl:part name="parameters" element="tns:GetAprilFoolsDay"/>
+  </wsdl:message>
+  <wsdl:message name="GetAprilFoolsDaySoapOut">
+    <wsdl:part name="parameters" element="tns:GetAprilFoolsDayResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetMothersDaySoapIn">
+    <wsdl:part name="parameters" element="tns:GetMothersDay"/>
+  </wsdl:message>
+  <wsdl:message name="GetMothersDaySoapOut">
+    <wsdl:part name="parameters" element="tns:GetMothersDayResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetMemorialDaySoapIn">
+    <wsdl:part name="parameters" element="tns:GetMemorialDay"/>
+  </wsdl:message>
+  <wsdl:message name="GetMemorialDaySoapOut">
+    <wsdl:part name="parameters" element="tns:GetMemorialDayResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetCincoDeMayoSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCincoDeMayo"/>
+  </wsdl:message>
+  <wsdl:message name="GetCincoDeMayoSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCincoDeMayoResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetFathersDaySoapIn">
+    <wsdl:part name="parameters" element="tns:GetFathersDay"/>
+  </wsdl:message>
+  <wsdl:message name="GetFathersDaySoapOut">
+    <wsdl:part name="parameters" element="tns:GetFathersDayResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetFlagDaySoapIn">
+    <wsdl:part name="parameters" element="tns:GetFlagDay"/>
+  </wsdl:message>
+  <wsdl:message name="GetFlagDaySoapOut">
+    <wsdl:part name="parameters" element="tns:GetFlagDayResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetIndependenceDaySoapIn">
+    <wsdl:part name="parameters" element="tns:GetIndependenceDay"/>
+  </wsdl:message>
+  <wsdl:message name="GetIndependenceDaySoapOut">
+    <wsdl:part name="parameters" element="tns:GetIndependenceDayResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetLaborDaySoapIn">
+    <wsdl:part name="parameters" element="tns:GetLaborDay"/>
+  </wsdl:message>
+  <wsdl:message name="GetLaborDaySoapOut">
+    <wsdl:part name="parameters" element="tns:GetLaborDayResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetColumbusDaySoapIn">
+    <wsdl:part name="parameters" element="tns:GetColumbusDay"/>
+  </wsdl:message>
+  <wsdl:message name="GetColumbusDaySoapOut">
+    <wsdl:part name="parameters" element="tns:GetColumbusDayResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetHalloweenDaySoapIn">
+    <wsdl:part name="parameters" element="tns:GetHalloweenDay"/>
+  </wsdl:message>
+  <wsdl:message name="GetHalloweenDaySoapOut">
+    <wsdl:part name="parameters" element="tns:GetHalloweenDayResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetThanksgivingDaySoapIn">
+    <wsdl:part name="parameters" element="tns:GetThanksgivingDay"/>
+  </wsdl:message>
+  <wsdl:message name="GetThanksgivingDaySoapOut">
+    <wsdl:part name="parameters" element="tns:GetThanksgivingDayResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetBlackFridaySoapIn">
+    <wsdl:part name="parameters" element="tns:GetBlackFriday"/>
+  </wsdl:message>
+  <wsdl:message name="GetBlackFridaySoapOut">
+    <wsdl:part name="parameters" element="tns:GetBlackFridayResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetVeteransDaySoapIn">
+    <wsdl:part name="parameters" element="tns:GetVeteransDay"/>
+  </wsdl:message>
+  <wsdl:message name="GetVeteransDaySoapOut">
+    <wsdl:part name="parameters" element="tns:GetVeteransDayResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetChristmasDaySoapIn">
+    <wsdl:part name="parameters" element="tns:GetChristmasDay"/>
+  </wsdl:message>
+  <wsdl:message name="GetChristmasDaySoapOut">
+    <wsdl:part name="parameters" element="tns:GetChristmasDayResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetNewYearsEveSoapIn">
+    <wsdl:part name="parameters" element="tns:GetNewYearsEve"/>
+  </wsdl:message>
+  <wsdl:message name="GetNewYearsEveSoapOut">
+    <wsdl:part name="parameters" element="tns:GetNewYearsEveResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetNewYearHttpGetIn">
+    <wsdl:part name="year" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="GetNewYearHttpGetOut">
+    <wsdl:part name="Body" element="tns:dateTime"/>
+  </wsdl:message>
+  <wsdl:message name="GetMartinLutherKingDayHttpGetIn">
+    <wsdl:part name="year" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="GetMartinLutherKingDayHttpGetOut">
+    <wsdl:part name="Body" element="tns:dateTime"/>
+  </wsdl:message>
+  <wsdl:message name="GetPresidentsDayHttpGetIn">
+    <wsdl:part name="year" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="GetPresidentsDayHttpGetOut">
+    <wsdl:part name="Body" element="tns:dateTime"/>
+  </wsdl:message>
+  <wsdl:message name="GetAbrahamLincolnsBirthdayHttpGetIn">
+    <wsdl:part name="year" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="GetAbrahamLincolnsBirthdayHttpGetOut">
+    <wsdl:part name="Body" element="tns:dateTime"/>
+  </wsdl:message>
+  <wsdl:message name="GetValentinesDayHttpGetIn">
+    <wsdl:part name="year" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="GetValentinesDayHttpGetOut">
+    <wsdl:part name="Body" element="tns:dateTime"/>
+  </wsdl:message>
+  <wsdl:message name="GetGeorgeWashingtonsBirthdayHttpGetIn">
+    <wsdl:part name="year" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="GetGeorgeWashingtonsBirthdayHttpGetOut">
+    <wsdl:part name="Body" element="tns:dateTime"/>
+  </wsdl:message>
+  <wsdl:message name="GetGoodFridayHttpGetIn">
+    <wsdl:part name="year" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="GetGoodFridayHttpGetOut">
+    <wsdl:part name="Body" element="tns:dateTime"/>
+  </wsdl:message>
+  <wsdl:message name="GetEasterHttpGetIn">
+    <wsdl:part name="year" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="GetEasterHttpGetOut">
+    <wsdl:part name="Body" element="tns:dateTime"/>
+  </wsdl:message>
+  <wsdl:message name="GetSaintPatricksDayHttpGetIn">
+    <wsdl:part name="year" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="GetSaintPatricksDayHttpGetOut">
+    <wsdl:part name="Body" element="tns:dateTime"/>
+  </wsdl:message>
+  <wsdl:message name="GetAprilFoolsDayHttpGetIn">
+    <wsdl:part name="year" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="GetAprilFoolsDayHttpGetOut">
+    <wsdl:part name="Body" element="tns:dateTime"/>
+  </wsdl:message>
+  <wsdl:message name="GetMothersDayHttpGetIn">
+    <wsdl:part name="year" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="GetMothersDayHttpGetOut">
+    <wsdl:part name="Body" element="tns:dateTime"/>
+  </wsdl:message>
+  <wsdl:message name="GetMemorialDayHttpGetIn">
+    <wsdl:part name="year" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="GetMemorialDayHttpGetOut">
+    <wsdl:part name="Body" element="tns:dateTime"/>
+  </wsdl:message>
+  <wsdl:message name="GetCincoDeMayoHttpGetIn">
+    <wsdl:part name="year" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="GetCincoDeMayoHttpGetOut">
+    <wsdl:part name="Body" element="tns:dateTime"/>
+  </wsdl:message>
+  <wsdl:message name="GetFathersDayHttpGetIn">
+    <wsdl:part name="year" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="GetFathersDayHttpGetOut">
+    <wsdl:part name="Body" element="tns:dateTime"/>
+  </wsdl:message>
+  <wsdl:message name="GetFlagDayHttpGetIn">
+    <wsdl:part name="year" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="GetFlagDayHttpGetOut">
+    <wsdl:part name="Body" element="tns:dateTime"/>
+  </wsdl:message>
+  <wsdl:message name="GetIndependenceDayHttpGetIn">
+    <wsdl:part name="year" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="GetIndependenceDayHttpGetOut">
+    <wsdl:part name="Body" element="tns:dateTime"/>
+  </wsdl:message>
+  <wsdl:message name="GetLaborDayHttpGetIn">
+    <wsdl:part name="year" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="GetLaborDayHttpGetOut">
+    <wsdl:part name="Body" element="tns:dateTime"/>
+  </wsdl:message>
+  <wsdl:message name="GetColumbusDayHttpGetIn">
+    <wsdl:part name="year" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="GetColumbusDayHttpGetOut">
+    <wsdl:part name="Body" element="tns:dateTime"/>
+  </wsdl:message>
+  <wsdl:message name="GetHalloweenDayHttpGetIn">
+    <wsdl:part name="year" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="GetHalloweenDayHttpGetOut">
+    <wsdl:part name="Body" element="tns:dateTime"/>
+  </wsdl:message>
+  <wsdl:message name="GetThanksgivingDayHttpGetIn">
+    <wsdl:part name="year" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="GetThanksgivingDayHttpGetOut">
+    <wsdl:part name="Body" element="tns:dateTime"/>
+  </wsdl:message>
+  <wsdl:message name="GetBlackFridayHttpGetIn">
+    <wsdl:part name="year" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="GetBlackFridayHttpGetOut">
+    <wsdl:part name="Body" element="tns:dateTime"/>
+  </wsdl:message>
+  <wsdl:message name="GetVeteransDayHttpGetIn">
+    <wsdl:part name="year" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="GetVeteransDayHttpGetOut">
+    <wsdl:part name="Body" element="tns:dateTime"/>
+  </wsdl:message>
+  <wsdl:message name="GetChristmasDayHttpGetIn">
+    <wsdl:part name="year" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="GetChristmasDayHttpGetOut">
+    <wsdl:part name="Body" element="tns:dateTime"/>
+  </wsdl:message>
+  <wsdl:message name="GetNewYearsEveHttpGetIn">
+    <wsdl:part name="year" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="GetNewYearsEveHttpGetOut">
+    <wsdl:part name="Body" element="tns:dateTime"/>
+  </wsdl:message>
+  <wsdl:message name="GetNewYearHttpPostIn">
+    <wsdl:part name="year" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="GetNewYearHttpPostOut">
+    <wsdl:part name="Body" element="tns:dateTime"/>
+  </wsdl:message>
+  <wsdl:message name="GetMartinLutherKingDayHttpPostIn">
+    <wsdl:part name="year" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="GetMartinLutherKingDayHttpPostOut">
+    <wsdl:part name="Body" element="tns:dateTime"/>
+  </wsdl:message>
+  <wsdl:message name="GetPresidentsDayHttpPostIn">
+    <wsdl:part name="year" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="GetPresidentsDayHttpPostOut">
+    <wsdl:part name="Body" element="tns:dateTime"/>
+  </wsdl:message>
+  <wsdl:message name="GetAbrahamLincolnsBirthdayHttpPostIn">
+    <wsdl:part name="year" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="GetAbrahamLincolnsBirthdayHttpPostOut">
+    <wsdl:part name="Body" element="tns:dateTime"/>
+  </wsdl:message>
+  <wsdl:message name="GetValentinesDayHttpPostIn">
+    <wsdl:part name="year" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="GetValentinesDayHttpPostOut">
+    <wsdl:part name="Body" element="tns:dateTime"/>
+  </wsdl:message>
+  <wsdl:message name="GetGeorgeWashingtonsBirthdayHttpPostIn">
+    <wsdl:part name="year" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="GetGeorgeWashingtonsBirthdayHttpPostOut">
+    <wsdl:part name="Body" element="tns:dateTime"/>
+  </wsdl:message>
+  <wsdl:message name="GetGoodFridayHttpPostIn">
+    <wsdl:part name="year" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="GetGoodFridayHttpPostOut">
+    <wsdl:part name="Body" element="tns:dateTime"/>
+  </wsdl:message>
+  <wsdl:message name="GetEasterHttpPostIn">
+    <wsdl:part name="year" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="GetEasterHttpPostOut">
+    <wsdl:part name="Body" element="tns:dateTime"/>
+  </wsdl:message>
+  <wsdl:message name="GetSaintPatricksDayHttpPostIn">
+    <wsdl:part name="year" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="GetSaintPatricksDayHttpPostOut">
+    <wsdl:part name="Body" element="tns:dateTime"/>
+  </wsdl:message>
+  <wsdl:message name="GetAprilFoolsDayHttpPostIn">
+    <wsdl:part name="year" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="GetAprilFoolsDayHttpPostOut">
+    <wsdl:part name="Body" element="tns:dateTime"/>
+  </wsdl:message>
+  <wsdl:message name="GetMothersDayHttpPostIn">
+    <wsdl:part name="year" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="GetMothersDayHttpPostOut">
+    <wsdl:part name="Body" element="tns:dateTime"/>
+  </wsdl:message>
+  <wsdl:message name="GetMemorialDayHttpPostIn">
+    <wsdl:part name="year" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="GetMemorialDayHttpPostOut">
+    <wsdl:part name="Body" element="tns:dateTime"/>
+  </wsdl:message>
+  <wsdl:message name="GetCincoDeMayoHttpPostIn">
+    <wsdl:part name="year" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="GetCincoDeMayoHttpPostOut">
+    <wsdl:part name="Body" element="tns:dateTime"/>
+  </wsdl:message>
+  <wsdl:message name="GetFathersDayHttpPostIn">
+    <wsdl:part name="year" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="GetFathersDayHttpPostOut">
+    <wsdl:part name="Body" element="tns:dateTime"/>
+  </wsdl:message>
+  <wsdl:message name="GetFlagDayHttpPostIn">
+    <wsdl:part name="year" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="GetFlagDayHttpPostOut">
+    <wsdl:part name="Body" element="tns:dateTime"/>
+  </wsdl:message>
+  <wsdl:message name="GetIndependenceDayHttpPostIn">
+    <wsdl:part name="year" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="GetIndependenceDayHttpPostOut">
+    <wsdl:part name="Body" element="tns:dateTime"/>
+  </wsdl:message>
+  <wsdl:message name="GetLaborDayHttpPostIn">
+    <wsdl:part name="year" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="GetLaborDayHttpPostOut">
+    <wsdl:part name="Body" element="tns:dateTime"/>
+  </wsdl:message>
+  <wsdl:message name="GetColumbusDayHttpPostIn">
+    <wsdl:part name="year" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="GetColumbusDayHttpPostOut">
+    <wsdl:part name="Body" element="tns:dateTime"/>
+  </wsdl:message>
+  <wsdl:message name="GetHalloweenDayHttpPostIn">
+    <wsdl:part name="year" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="GetHalloweenDayHttpPostOut">
+    <wsdl:part name="Body" element="tns:dateTime"/>
+  </wsdl:message>
+  <wsdl:message name="GetThanksgivingDayHttpPostIn">
+    <wsdl:part name="year" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="GetThanksgivingDayHttpPostOut">
+    <wsdl:part name="Body" element="tns:dateTime"/>
+  </wsdl:message>
+  <wsdl:message name="GetBlackFridayHttpPostIn">
+    <wsdl:part name="year" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="GetBlackFridayHttpPostOut">
+    <wsdl:part name="Body" element="tns:dateTime"/>
+  </wsdl:message>
+  <wsdl:message name="GetVeteransDayHttpPostIn">
+    <wsdl:part name="year" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="GetVeteransDayHttpPostOut">
+    <wsdl:part name="Body" element="tns:dateTime"/>
+  </wsdl:message>
+  <wsdl:message name="GetChristmasDayHttpPostIn">
+    <wsdl:part name="year" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="GetChristmasDayHttpPostOut">
+    <wsdl:part name="Body" element="tns:dateTime"/>
+  </wsdl:message>
+  <wsdl:message name="GetNewYearsEveHttpPostIn">
+    <wsdl:part name="year" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="GetNewYearsEveHttpPostOut">
+    <wsdl:part name="Body" element="tns:dateTime"/>
+  </wsdl:message>
+  <wsdl:portType name="USHolidayDatesSoap">
+    <wsdl:operation name="GetNewYear">
+      <wsdl:documentation>Get the date of New Year.</wsdl:documentation>
+      <wsdl:input message="tns:GetNewYearSoapIn"/>
+      <wsdl:output message="tns:GetNewYearSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetMartinLutherKingDay">
+      <wsdl:documentation>Get the date of Martin Luther King Day.</wsdl:documentation>
+      <wsdl:input message="tns:GetMartinLutherKingDaySoapIn"/>
+      <wsdl:output message="tns:GetMartinLutherKingDaySoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetPresidentsDay">
+      <wsdl:documentation>Get the date of President's Day.</wsdl:documentation>
+      <wsdl:input message="tns:GetPresidentsDaySoapIn"/>
+      <wsdl:output message="tns:GetPresidentsDaySoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetAbrahamLincolnsBirthday">
+      <wsdl:documentation>Get the date of Abraham Lincoln's Birthday.</wsdl:documentation>
+      <wsdl:input message="tns:GetAbrahamLincolnsBirthdaySoapIn"/>
+      <wsdl:output message="tns:GetAbrahamLincolnsBirthdaySoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetValentinesDay">
+      <wsdl:documentation>Get the date of Valentines Day.</wsdl:documentation>
+      <wsdl:input message="tns:GetValentinesDaySoapIn"/>
+      <wsdl:output message="tns:GetValentinesDaySoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetGeorgeWashingtonsBirthday">
+      <wsdl:documentation>Get the date of George Washington's Birthday.</wsdl:documentation>
+      <wsdl:input message="tns:GetGeorgeWashingtonsBirthdaySoapIn"/>
+      <wsdl:output message="tns:GetGeorgeWashingtonsBirthdaySoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetGoodFriday">
+      <wsdl:documentation>Get the date of Good Friday.</wsdl:documentation>
+      <wsdl:input message="tns:GetGoodFridaySoapIn"/>
+      <wsdl:output message="tns:GetGoodFridaySoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetEaster">
+      <wsdl:documentation>Get the date of Easter.</wsdl:documentation>
+      <wsdl:input message="tns:GetEasterSoapIn"/>
+      <wsdl:output message="tns:GetEasterSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetSaintPatricksDay">
+      <wsdl:documentation>Get the date of Saint Patrick's Day.</wsdl:documentation>
+      <wsdl:input message="tns:GetSaintPatricksDaySoapIn"/>
+      <wsdl:output message="tns:GetSaintPatricksDaySoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetAprilFoolsDay">
+      <wsdl:documentation>Get the date of April Fool's Day.</wsdl:documentation>
+      <wsdl:input message="tns:GetAprilFoolsDaySoapIn"/>
+      <wsdl:output message="tns:GetAprilFoolsDaySoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetMothersDay">
+      <wsdl:documentation>Get the date of Mother's Day.</wsdl:documentation>
+      <wsdl:input message="tns:GetMothersDaySoapIn"/>
+      <wsdl:output message="tns:GetMothersDaySoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetMemorialDay">
+      <wsdl:documentation>Get the date of Memorial Day.</wsdl:documentation>
+      <wsdl:input message="tns:GetMemorialDaySoapIn"/>
+      <wsdl:output message="tns:GetMemorialDaySoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetCincoDeMayo">
+      <wsdl:documentation>Get the date of Cinco de Mayo.</wsdl:documentation>
+      <wsdl:input message="tns:GetCincoDeMayoSoapIn"/>
+      <wsdl:output message="tns:GetCincoDeMayoSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetFathersDay">
+      <wsdl:documentation>Get the date of Father's Day.</wsdl:documentation>
+      <wsdl:input message="tns:GetFathersDaySoapIn"/>
+      <wsdl:output message="tns:GetFathersDaySoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetFlagDay">
+      <wsdl:documentation>Get the date of Flag Day.</wsdl:documentation>
+      <wsdl:input message="tns:GetFlagDaySoapIn"/>
+      <wsdl:output message="tns:GetFlagDaySoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetIndependenceDay">
+      <wsdl:documentation>Get the date of Independence Day.</wsdl:documentation>
+      <wsdl:input message="tns:GetIndependenceDaySoapIn"/>
+      <wsdl:output message="tns:GetIndependenceDaySoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetLaborDay">
+      <wsdl:documentation>Get the date of Labor Day.</wsdl:documentation>
+      <wsdl:input message="tns:GetLaborDaySoapIn"/>
+      <wsdl:output message="tns:GetLaborDaySoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetColumbusDay">
+      <wsdl:documentation>Get the date of Columbus Day.</wsdl:documentation>
+      <wsdl:input message="tns:GetColumbusDaySoapIn"/>
+      <wsdl:output message="tns:GetColumbusDaySoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetHalloweenDay">
+      <wsdl:documentation>Get the date of Halloween Day.</wsdl:documentation>
+      <wsdl:input message="tns:GetHalloweenDaySoapIn"/>
+      <wsdl:output message="tns:GetHalloweenDaySoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetThanksgivingDay">
+      <wsdl:documentation>Get the date of Thanksgiving Day.</wsdl:documentation>
+      <wsdl:input message="tns:GetThanksgivingDaySoapIn"/>
+      <wsdl:output message="tns:GetThanksgivingDaySoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetBlackFriday">
+      <wsdl:documentation>Get the date of Black Friday.</wsdl:documentation>
+      <wsdl:input message="tns:GetBlackFridaySoapIn"/>
+      <wsdl:output message="tns:GetBlackFridaySoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetVeteransDay">
+      <wsdl:documentation>Get the date of Veteran's Day.</wsdl:documentation>
+      <wsdl:input message="tns:GetVeteransDaySoapIn"/>
+      <wsdl:output message="tns:GetVeteransDaySoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetChristmasDay">
+      <wsdl:documentation>Get the date of Christmas.</wsdl:documentation>
+      <wsdl:input message="tns:GetChristmasDaySoapIn"/>
+      <wsdl:output message="tns:GetChristmasDaySoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetNewYearsEve">
+      <wsdl:documentation>Get the date of New Year's Eve.</wsdl:documentation>
+      <wsdl:input message="tns:GetNewYearsEveSoapIn"/>
+      <wsdl:output message="tns:GetNewYearsEveSoapOut"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="USHolidayDatesHttpGet">
+    <wsdl:operation name="GetNewYear">
+      <wsdl:documentation>Get the date of New Year.</wsdl:documentation>
+      <wsdl:input message="tns:GetNewYearHttpGetIn"/>
+      <wsdl:output message="tns:GetNewYearHttpGetOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetMartinLutherKingDay">
+      <wsdl:documentation>Get the date of Martin Luther King Day.</wsdl:documentation>
+      <wsdl:input message="tns:GetMartinLutherKingDayHttpGetIn"/>
+      <wsdl:output message="tns:GetMartinLutherKingDayHttpGetOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetPresidentsDay">
+      <wsdl:documentation>Get the date of President's Day.</wsdl:documentation>
+      <wsdl:input message="tns:GetPresidentsDayHttpGetIn"/>
+      <wsdl:output message="tns:GetPresidentsDayHttpGetOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetAbrahamLincolnsBirthday">
+      <wsdl:documentation>Get the date of Abraham Lincoln's Birthday.</wsdl:documentation>
+      <wsdl:input message="tns:GetAbrahamLincolnsBirthdayHttpGetIn"/>
+      <wsdl:output message="tns:GetAbrahamLincolnsBirthdayHttpGetOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetValentinesDay">
+      <wsdl:documentation>Get the date of Valentines Day.</wsdl:documentation>
+      <wsdl:input message="tns:GetValentinesDayHttpGetIn"/>
+      <wsdl:output message="tns:GetValentinesDayHttpGetOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetGeorgeWashingtonsBirthday">
+      <wsdl:documentation>Get the date of George Washington's Birthday.</wsdl:documentation>
+      <wsdl:input message="tns:GetGeorgeWashingtonsBirthdayHttpGetIn"/>
+      <wsdl:output message="tns:GetGeorgeWashingtonsBirthdayHttpGetOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetGoodFriday">
+      <wsdl:documentation>Get the date of Good Friday.</wsdl:documentation>
+      <wsdl:input message="tns:GetGoodFridayHttpGetIn"/>
+      <wsdl:output message="tns:GetGoodFridayHttpGetOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetEaster">
+      <wsdl:documentation>Get the date of Easter.</wsdl:documentation>
+      <wsdl:input message="tns:GetEasterHttpGetIn"/>
+      <wsdl:output message="tns:GetEasterHttpGetOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetSaintPatricksDay">
+      <wsdl:documentation>Get the date of Saint Patrick's Day.</wsdl:documentation>
+      <wsdl:input message="tns:GetSaintPatricksDayHttpGetIn"/>
+      <wsdl:output message="tns:GetSaintPatricksDayHttpGetOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetAprilFoolsDay">
+      <wsdl:documentation>Get the date of April Fool's Day.</wsdl:documentation>
+      <wsdl:input message="tns:GetAprilFoolsDayHttpGetIn"/>
+      <wsdl:output message="tns:GetAprilFoolsDayHttpGetOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetMothersDay">
+      <wsdl:documentation>Get the date of Mother's Day.</wsdl:documentation>
+      <wsdl:input message="tns:GetMothersDayHttpGetIn"/>
+      <wsdl:output message="tns:GetMothersDayHttpGetOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetMemorialDay">
+      <wsdl:documentation>Get the date of Memorial Day.</wsdl:documentation>
+      <wsdl:input message="tns:GetMemorialDayHttpGetIn"/>
+      <wsdl:output message="tns:GetMemorialDayHttpGetOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetCincoDeMayo">
+      <wsdl:documentation>Get the date of Cinco de Mayo.</wsdl:documentation>
+      <wsdl:input message="tns:GetCincoDeMayoHttpGetIn"/>
+      <wsdl:output message="tns:GetCincoDeMayoHttpGetOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetFathersDay">
+      <wsdl:documentation>Get the date of Father's Day.</wsdl:documentation>
+      <wsdl:input message="tns:GetFathersDayHttpGetIn"/>
+      <wsdl:output message="tns:GetFathersDayHttpGetOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetFlagDay">
+      <wsdl:documentation>Get the date of Flag Day.</wsdl:documentation>
+      <wsdl:input message="tns:GetFlagDayHttpGetIn"/>
+      <wsdl:output message="tns:GetFlagDayHttpGetOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetIndependenceDay">
+      <wsdl:documentation>Get the date of Independence Day.</wsdl:documentation>
+      <wsdl:input message="tns:GetIndependenceDayHttpGetIn"/>
+      <wsdl:output message="tns:GetIndependenceDayHttpGetOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetLaborDay">
+      <wsdl:documentation>Get the date of Labor Day.</wsdl:documentation>
+      <wsdl:input message="tns:GetLaborDayHttpGetIn"/>
+      <wsdl:output message="tns:GetLaborDayHttpGetOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetColumbusDay">
+      <wsdl:documentation>Get the date of Columbus Day.</wsdl:documentation>
+      <wsdl:input message="tns:GetColumbusDayHttpGetIn"/>
+      <wsdl:output message="tns:GetColumbusDayHttpGetOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetHalloweenDay">
+      <wsdl:documentation>Get the date of Halloween Day.</wsdl:documentation>
+      <wsdl:input message="tns:GetHalloweenDayHttpGetIn"/>
+      <wsdl:output message="tns:GetHalloweenDayHttpGetOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetThanksgivingDay">
+      <wsdl:documentation>Get the date of Thanksgiving Day.</wsdl:documentation>
+      <wsdl:input message="tns:GetThanksgivingDayHttpGetIn"/>
+      <wsdl:output message="tns:GetThanksgivingDayHttpGetOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetBlackFriday">
+      <wsdl:documentation>Get the date of Black Friday.</wsdl:documentation>
+      <wsdl:input message="tns:GetBlackFridayHttpGetIn"/>
+      <wsdl:output message="tns:GetBlackFridayHttpGetOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetVeteransDay">
+      <wsdl:documentation>Get the date of Veteran's Day.</wsdl:documentation>
+      <wsdl:input message="tns:GetVeteransDayHttpGetIn"/>
+      <wsdl:output message="tns:GetVeteransDayHttpGetOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetChristmasDay">
+      <wsdl:documentation>Get the date of Christmas.</wsdl:documentation>
+      <wsdl:input message="tns:GetChristmasDayHttpGetIn"/>
+      <wsdl:output message="tns:GetChristmasDayHttpGetOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetNewYearsEve">
+      <wsdl:documentation>Get the date of New Year's Eve.</wsdl:documentation>
+      <wsdl:input message="tns:GetNewYearsEveHttpGetIn"/>
+      <wsdl:output message="tns:GetNewYearsEveHttpGetOut"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="USHolidayDatesHttpPost">
+    <wsdl:operation name="GetNewYear">
+      <wsdl:documentation>Get the date of New Year.</wsdl:documentation>
+      <wsdl:input message="tns:GetNewYearHttpPostIn"/>
+      <wsdl:output message="tns:GetNewYearHttpPostOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetMartinLutherKingDay">
+      <wsdl:documentation>Get the date of Martin Luther King Day.</wsdl:documentation>
+      <wsdl:input message="tns:GetMartinLutherKingDayHttpPostIn"/>
+      <wsdl:output message="tns:GetMartinLutherKingDayHttpPostOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetPresidentsDay">
+      <wsdl:documentation>Get the date of President's Day.</wsdl:documentation>
+      <wsdl:input message="tns:GetPresidentsDayHttpPostIn"/>
+      <wsdl:output message="tns:GetPresidentsDayHttpPostOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetAbrahamLincolnsBirthday">
+      <wsdl:documentation>Get the date of Abraham Lincoln's Birthday.</wsdl:documentation>
+      <wsdl:input message="tns:GetAbrahamLincolnsBirthdayHttpPostIn"/>
+      <wsdl:output message="tns:GetAbrahamLincolnsBirthdayHttpPostOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetValentinesDay">
+      <wsdl:documentation>Get the date of Valentines Day.</wsdl:documentation>
+      <wsdl:input message="tns:GetValentinesDayHttpPostIn"/>
+      <wsdl:output message="tns:GetValentinesDayHttpPostOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetGeorgeWashingtonsBirthday">
+      <wsdl:documentation>Get the date of George Washington's Birthday.</wsdl:documentation>
+      <wsdl:input message="tns:GetGeorgeWashingtonsBirthdayHttpPostIn"/>
+      <wsdl:output message="tns:GetGeorgeWashingtonsBirthdayHttpPostOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetGoodFriday">
+      <wsdl:documentation>Get the date of Good Friday.</wsdl:documentation>
+      <wsdl:input message="tns:GetGoodFridayHttpPostIn"/>
+      <wsdl:output message="tns:GetGoodFridayHttpPostOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetEaster">
+      <wsdl:documentation>Get the date of Easter.</wsdl:documentation>
+      <wsdl:input message="tns:GetEasterHttpPostIn"/>
+      <wsdl:output message="tns:GetEasterHttpPostOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetSaintPatricksDay">
+      <wsdl:documentation>Get the date of Saint Patrick's Day.</wsdl:documentation>
+      <wsdl:input message="tns:GetSaintPatricksDayHttpPostIn"/>
+      <wsdl:output message="tns:GetSaintPatricksDayHttpPostOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetAprilFoolsDay">
+      <wsdl:documentation>Get the date of April Fool's Day.</wsdl:documentation>
+      <wsdl:input message="tns:GetAprilFoolsDayHttpPostIn"/>
+      <wsdl:output message="tns:GetAprilFoolsDayHttpPostOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetMothersDay">
+      <wsdl:documentation>Get the date of Mother's Day.</wsdl:documentation>
+      <wsdl:input message="tns:GetMothersDayHttpPostIn"/>
+      <wsdl:output message="tns:GetMothersDayHttpPostOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetMemorialDay">
+      <wsdl:documentation>Get the date of Memorial Day.</wsdl:documentation>
+      <wsdl:input message="tns:GetMemorialDayHttpPostIn"/>
+      <wsdl:output message="tns:GetMemorialDayHttpPostOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetCincoDeMayo">
+      <wsdl:documentation>Get the date of Cinco de Mayo.</wsdl:documentation>
+      <wsdl:input message="tns:GetCincoDeMayoHttpPostIn"/>
+      <wsdl:output message="tns:GetCincoDeMayoHttpPostOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetFathersDay">
+      <wsdl:documentation>Get the date of Father's Day.</wsdl:documentation>
+      <wsdl:input message="tns:GetFathersDayHttpPostIn"/>
+      <wsdl:output message="tns:GetFathersDayHttpPostOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetFlagDay">
+      <wsdl:documentation>Get the date of Flag Day.</wsdl:documentation>
+      <wsdl:input message="tns:GetFlagDayHttpPostIn"/>
+      <wsdl:output message="tns:GetFlagDayHttpPostOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetIndependenceDay">
+      <wsdl:documentation>Get the date of Independence Day.</wsdl:documentation>
+      <wsdl:input message="tns:GetIndependenceDayHttpPostIn"/>
+      <wsdl:output message="tns:GetIndependenceDayHttpPostOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetLaborDay">
+      <wsdl:documentation>Get the date of Labor Day.</wsdl:documentation>
+      <wsdl:input message="tns:GetLaborDayHttpPostIn"/>
+      <wsdl:output message="tns:GetLaborDayHttpPostOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetColumbusDay">
+      <wsdl:documentation>Get the date of Columbus Day.</wsdl:documentation>
+      <wsdl:input message="tns:GetColumbusDayHttpPostIn"/>
+      <wsdl:output message="tns:GetColumbusDayHttpPostOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetHalloweenDay">
+      <wsdl:documentation>Get the date of Halloween Day.</wsdl:documentation>
+      <wsdl:input message="tns:GetHalloweenDayHttpPostIn"/>
+      <wsdl:output message="tns:GetHalloweenDayHttpPostOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetThanksgivingDay">
+      <wsdl:documentation>Get the date of Thanksgiving Day.</wsdl:documentation>
+      <wsdl:input message="tns:GetThanksgivingDayHttpPostIn"/>
+      <wsdl:output message="tns:GetThanksgivingDayHttpPostOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetBlackFriday">
+      <wsdl:documentation>Get the date of Black Friday.</wsdl:documentation>
+      <wsdl:input message="tns:GetBlackFridayHttpPostIn"/>
+      <wsdl:output message="tns:GetBlackFridayHttpPostOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetVeteransDay">
+      <wsdl:documentation>Get the date of Veteran's Day.</wsdl:documentation>
+      <wsdl:input message="tns:GetVeteransDayHttpPostIn"/>
+      <wsdl:output message="tns:GetVeteransDayHttpPostOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetChristmasDay">
+      <wsdl:documentation>Get the date of Christmas.</wsdl:documentation>
+      <wsdl:input message="tns:GetChristmasDayHttpPostIn"/>
+      <wsdl:output message="tns:GetChristmasDayHttpPostOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetNewYearsEve">
+      <wsdl:documentation>Get the date of New Year's Eve.</wsdl:documentation>
+      <wsdl:input message="tns:GetNewYearsEveHttpPostIn"/>
+      <wsdl:output message="tns:GetNewYearsEveHttpPostOut"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="USHolidayDatesSoap" type="tns:USHolidayDatesSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="GetNewYear">
+      <soap:operation soapAction="http://www.27seconds.com/Holidays/US/Dates/GetNewYear" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMartinLutherKingDay">
+      <soap:operation soapAction="http://www.27seconds.com/Holidays/US/Dates/GetMartinLutherKingDay" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPresidentsDay">
+      <soap:operation soapAction="http://www.27seconds.com/Holidays/US/Dates/GetPresidentsDay" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAbrahamLincolnsBirthday">
+      <soap:operation soapAction="http://www.27seconds.com/Holidays/US/Dates/GetAbrahamLincolnsBirthday" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetValentinesDay">
+      <soap:operation soapAction="http://www.27seconds.com/Holidays/US/Dates/GetValentinesDay" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGeorgeWashingtonsBirthday">
+      <soap:operation soapAction="http://www.27seconds.com/Holidays/US/Dates/GetGeorgeWashingtonsBirthday" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGoodFriday">
+      <soap:operation soapAction="http://www.27seconds.com/Holidays/US/Dates/GetGoodFriday" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEaster">
+      <soap:operation soapAction="http://www.27seconds.com/Holidays/US/Dates/GetEaster" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSaintPatricksDay">
+      <soap:operation soapAction="http://www.27seconds.com/Holidays/US/Dates/GetSaintPatricksDay" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAprilFoolsDay">
+      <soap:operation soapAction="http://www.27seconds.com/Holidays/US/Dates/GetAprilFoolsDay" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMothersDay">
+      <soap:operation soapAction="http://www.27seconds.com/Holidays/US/Dates/GetMothersDay" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMemorialDay">
+      <soap:operation soapAction="http://www.27seconds.com/Holidays/US/Dates/GetMemorialDay" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCincoDeMayo">
+      <soap:operation soapAction="http://www.27seconds.com/Holidays/US/Dates/GetCincoDeMayo" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFathersDay">
+      <soap:operation soapAction="http://www.27seconds.com/Holidays/US/Dates/GetFathersDay" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFlagDay">
+      <soap:operation soapAction="http://www.27seconds.com/Holidays/US/Dates/GetFlagDay" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetIndependenceDay">
+      <soap:operation soapAction="http://www.27seconds.com/Holidays/US/Dates/GetIndependenceDay" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLaborDay">
+      <soap:operation soapAction="http://www.27seconds.com/Holidays/US/Dates/GetLaborDay" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetColumbusDay">
+      <soap:operation soapAction="http://www.27seconds.com/Holidays/US/Dates/GetColumbusDay" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetHalloweenDay">
+      <soap:operation soapAction="http://www.27seconds.com/Holidays/US/Dates/GetHalloweenDay" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetThanksgivingDay">
+      <soap:operation soapAction="http://www.27seconds.com/Holidays/US/Dates/GetThanksgivingDay" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBlackFriday">
+      <soap:operation soapAction="http://www.27seconds.com/Holidays/US/Dates/GetBlackFriday" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetVeteransDay">
+      <soap:operation soapAction="http://www.27seconds.com/Holidays/US/Dates/GetVeteransDay" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetChristmasDay">
+      <soap:operation soapAction="http://www.27seconds.com/Holidays/US/Dates/GetChristmasDay" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetNewYearsEve">
+      <soap:operation soapAction="http://www.27seconds.com/Holidays/US/Dates/GetNewYearsEve" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="USHolidayDatesSoap12" type="tns:USHolidayDatesSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="GetNewYear">
+      <soap12:operation soapAction="http://www.27seconds.com/Holidays/US/Dates/GetNewYear" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMartinLutherKingDay">
+      <soap12:operation soapAction="http://www.27seconds.com/Holidays/US/Dates/GetMartinLutherKingDay" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPresidentsDay">
+      <soap12:operation soapAction="http://www.27seconds.com/Holidays/US/Dates/GetPresidentsDay" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAbrahamLincolnsBirthday">
+      <soap12:operation soapAction="http://www.27seconds.com/Holidays/US/Dates/GetAbrahamLincolnsBirthday" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetValentinesDay">
+      <soap12:operation soapAction="http://www.27seconds.com/Holidays/US/Dates/GetValentinesDay" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGeorgeWashingtonsBirthday">
+      <soap12:operation soapAction="http://www.27seconds.com/Holidays/US/Dates/GetGeorgeWashingtonsBirthday" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGoodFriday">
+      <soap12:operation soapAction="http://www.27seconds.com/Holidays/US/Dates/GetGoodFriday" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEaster">
+      <soap12:operation soapAction="http://www.27seconds.com/Holidays/US/Dates/GetEaster" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSaintPatricksDay">
+      <soap12:operation soapAction="http://www.27seconds.com/Holidays/US/Dates/GetSaintPatricksDay" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAprilFoolsDay">
+      <soap12:operation soapAction="http://www.27seconds.com/Holidays/US/Dates/GetAprilFoolsDay" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMothersDay">
+      <soap12:operation soapAction="http://www.27seconds.com/Holidays/US/Dates/GetMothersDay" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMemorialDay">
+      <soap12:operation soapAction="http://www.27seconds.com/Holidays/US/Dates/GetMemorialDay" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCincoDeMayo">
+      <soap12:operation soapAction="http://www.27seconds.com/Holidays/US/Dates/GetCincoDeMayo" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFathersDay">
+      <soap12:operation soapAction="http://www.27seconds.com/Holidays/US/Dates/GetFathersDay" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFlagDay">
+      <soap12:operation soapAction="http://www.27seconds.com/Holidays/US/Dates/GetFlagDay" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetIndependenceDay">
+      <soap12:operation soapAction="http://www.27seconds.com/Holidays/US/Dates/GetIndependenceDay" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLaborDay">
+      <soap12:operation soapAction="http://www.27seconds.com/Holidays/US/Dates/GetLaborDay" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetColumbusDay">
+      <soap12:operation soapAction="http://www.27seconds.com/Holidays/US/Dates/GetColumbusDay" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetHalloweenDay">
+      <soap12:operation soapAction="http://www.27seconds.com/Holidays/US/Dates/GetHalloweenDay" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetThanksgivingDay">
+      <soap12:operation soapAction="http://www.27seconds.com/Holidays/US/Dates/GetThanksgivingDay" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBlackFriday">
+      <soap12:operation soapAction="http://www.27seconds.com/Holidays/US/Dates/GetBlackFriday" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetVeteransDay">
+      <soap12:operation soapAction="http://www.27seconds.com/Holidays/US/Dates/GetVeteransDay" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetChristmasDay">
+      <soap12:operation soapAction="http://www.27seconds.com/Holidays/US/Dates/GetChristmasDay" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetNewYearsEve">
+      <soap12:operation soapAction="http://www.27seconds.com/Holidays/US/Dates/GetNewYearsEve" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="USHolidayDatesHttpGet" type="tns:USHolidayDatesHttpGet">
+    <http:binding verb="GET"/>
+    <wsdl:operation name="GetNewYear">
+      <http:operation location="/GetNewYear"/>
+      <wsdl:input>
+        <http:urlEncoded/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMartinLutherKingDay">
+      <http:operation location="/GetMartinLutherKingDay"/>
+      <wsdl:input>
+        <http:urlEncoded/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPresidentsDay">
+      <http:operation location="/GetPresidentsDay"/>
+      <wsdl:input>
+        <http:urlEncoded/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAbrahamLincolnsBirthday">
+      <http:operation location="/GetAbrahamLincolnsBirthday"/>
+      <wsdl:input>
+        <http:urlEncoded/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetValentinesDay">
+      <http:operation location="/GetValentinesDay"/>
+      <wsdl:input>
+        <http:urlEncoded/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGeorgeWashingtonsBirthday">
+      <http:operation location="/GetGeorgeWashingtonsBirthday"/>
+      <wsdl:input>
+        <http:urlEncoded/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGoodFriday">
+      <http:operation location="/GetGoodFriday"/>
+      <wsdl:input>
+        <http:urlEncoded/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEaster">
+      <http:operation location="/GetEaster"/>
+      <wsdl:input>
+        <http:urlEncoded/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSaintPatricksDay">
+      <http:operation location="/GetSaintPatricksDay"/>
+      <wsdl:input>
+        <http:urlEncoded/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAprilFoolsDay">
+      <http:operation location="/GetAprilFoolsDay"/>
+      <wsdl:input>
+        <http:urlEncoded/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMothersDay">
+      <http:operation location="/GetMothersDay"/>
+      <wsdl:input>
+        <http:urlEncoded/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMemorialDay">
+      <http:operation location="/GetMemorialDay"/>
+      <wsdl:input>
+        <http:urlEncoded/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCincoDeMayo">
+      <http:operation location="/GetCincoDeMayo"/>
+      <wsdl:input>
+        <http:urlEncoded/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFathersDay">
+      <http:operation location="/GetFathersDay"/>
+      <wsdl:input>
+        <http:urlEncoded/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFlagDay">
+      <http:operation location="/GetFlagDay"/>
+      <wsdl:input>
+        <http:urlEncoded/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetIndependenceDay">
+      <http:operation location="/GetIndependenceDay"/>
+      <wsdl:input>
+        <http:urlEncoded/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLaborDay">
+      <http:operation location="/GetLaborDay"/>
+      <wsdl:input>
+        <http:urlEncoded/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetColumbusDay">
+      <http:operation location="/GetColumbusDay"/>
+      <wsdl:input>
+        <http:urlEncoded/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetHalloweenDay">
+      <http:operation location="/GetHalloweenDay"/>
+      <wsdl:input>
+        <http:urlEncoded/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetThanksgivingDay">
+      <http:operation location="/GetThanksgivingDay"/>
+      <wsdl:input>
+        <http:urlEncoded/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBlackFriday">
+      <http:operation location="/GetBlackFriday"/>
+      <wsdl:input>
+        <http:urlEncoded/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetVeteransDay">
+      <http:operation location="/GetVeteransDay"/>
+      <wsdl:input>
+        <http:urlEncoded/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetChristmasDay">
+      <http:operation location="/GetChristmasDay"/>
+      <wsdl:input>
+        <http:urlEncoded/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetNewYearsEve">
+      <http:operation location="/GetNewYearsEve"/>
+      <wsdl:input>
+        <http:urlEncoded/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="USHolidayDatesHttpPost" type="tns:USHolidayDatesHttpPost">
+    <http:binding verb="POST"/>
+    <wsdl:operation name="GetNewYear">
+      <http:operation location="/GetNewYear"/>
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMartinLutherKingDay">
+      <http:operation location="/GetMartinLutherKingDay"/>
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPresidentsDay">
+      <http:operation location="/GetPresidentsDay"/>
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAbrahamLincolnsBirthday">
+      <http:operation location="/GetAbrahamLincolnsBirthday"/>
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetValentinesDay">
+      <http:operation location="/GetValentinesDay"/>
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGeorgeWashingtonsBirthday">
+      <http:operation location="/GetGeorgeWashingtonsBirthday"/>
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGoodFriday">
+      <http:operation location="/GetGoodFriday"/>
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEaster">
+      <http:operation location="/GetEaster"/>
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSaintPatricksDay">
+      <http:operation location="/GetSaintPatricksDay"/>
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAprilFoolsDay">
+      <http:operation location="/GetAprilFoolsDay"/>
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMothersDay">
+      <http:operation location="/GetMothersDay"/>
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMemorialDay">
+      <http:operation location="/GetMemorialDay"/>
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCincoDeMayo">
+      <http:operation location="/GetCincoDeMayo"/>
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFathersDay">
+      <http:operation location="/GetFathersDay"/>
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFlagDay">
+      <http:operation location="/GetFlagDay"/>
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetIndependenceDay">
+      <http:operation location="/GetIndependenceDay"/>
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLaborDay">
+      <http:operation location="/GetLaborDay"/>
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetColumbusDay">
+      <http:operation location="/GetColumbusDay"/>
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetHalloweenDay">
+      <http:operation location="/GetHalloweenDay"/>
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetThanksgivingDay">
+      <http:operation location="/GetThanksgivingDay"/>
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBlackFriday">
+      <http:operation location="/GetBlackFriday"/>
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetVeteransDay">
+      <http:operation location="/GetVeteransDay"/>
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetChristmasDay">
+      <http:operation location="/GetChristmasDay"/>
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetNewYearsEve">
+      <http:operation location="/GetNewYearsEve"/>
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="USHolidayDates">
+    <wsdl:documentation>Web service that calculates specific national holidays for the US.</wsdl:documentation>
+    <wsdl:port name="USHolidayDatesSoap" binding="tns:USHolidayDatesSoap">
+      <soap:address location="http://www.holidaywebservice.com/Holidays/US/Dates/USHolidayDates.asmx"/>
+    </wsdl:port>
+    <wsdl:port name="USHolidayDatesSoap12" binding="tns:USHolidayDatesSoap12">
+      <soap12:address location="http://www.holidaywebservice.com/Holidays/US/Dates/USHolidayDates.asmx"/>
+    </wsdl:port>
+    <wsdl:port name="USHolidayDatesHttpGet" binding="tns:USHolidayDatesHttpGet">
+      <http:address location="http://www.holidaywebservice.com/Holidays/US/Dates/USHolidayDates.asmx"/>
+    </wsdl:port>
+    <wsdl:port name="USHolidayDatesHttpPost" binding="tns:USHolidayDatesHttpPost">
+      <http:address location="http://www.holidaywebservice.com/Holidays/US/Dates/USHolidayDates.asmx"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://www.holidaywebservice.com/Holidays/US/Dates/USHolidayDates.asmx</con:endpoint></con:endpoints><con:operation id="be51c0ca-de1a-4ae9-9518-0779ba765c83" isOneWay="false" action="http://www.27seconds.com/Holidays/US/Dates/GetAbrahamLincolnsBirthday" name="GetAbrahamLincolnsBirthday" bindingOperationName="GetAbrahamLincolnsBirthday" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="09a0f095-ecab-4d19-bbf0-68351be2f270" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.holidaywebservice.com/Holidays/US/Dates/USHolidayDates.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:dat="http://www.27seconds.com/Holidays/US/Dates/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <dat:GetAbrahamLincolnsBirthday>
+         <dat:year>?</dat:year>
+      </dat:GetAbrahamLincolnsBirthday>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.27seconds.com/Holidays/US/Dates/GetAbrahamLincolnsBirthday"/></con:call></con:operation><con:operation id="56ad4561-0137-4a28-a8ce-956d00fdbdfb" isOneWay="false" action="http://www.27seconds.com/Holidays/US/Dates/GetAprilFoolsDay" name="GetAprilFoolsDay" bindingOperationName="GetAprilFoolsDay" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="6f3738a7-a68e-4311-8539-2c8f71b5c344" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.holidaywebservice.com/Holidays/US/Dates/USHolidayDates.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:dat="http://www.27seconds.com/Holidays/US/Dates/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <dat:GetAprilFoolsDay>
+         <dat:year>?</dat:year>
+      </dat:GetAprilFoolsDay>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.27seconds.com/Holidays/US/Dates/GetAprilFoolsDay"/></con:call></con:operation><con:operation id="ae2683ab-801a-470e-ad2a-8d35f246a1ad" isOneWay="false" action="http://www.27seconds.com/Holidays/US/Dates/GetBlackFriday" name="GetBlackFriday" bindingOperationName="GetBlackFriday" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="0eb2cee6-925e-4106-a08a-b8082f8b5995" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.holidaywebservice.com/Holidays/US/Dates/USHolidayDates.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:dat="http://www.27seconds.com/Holidays/US/Dates/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <dat:GetBlackFriday>
+         <dat:year>?</dat:year>
+      </dat:GetBlackFriday>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.27seconds.com/Holidays/US/Dates/GetBlackFriday"/></con:call></con:operation><con:operation id="f23f8975-d604-410b-8bfb-06c293e59eba" isOneWay="false" action="http://www.27seconds.com/Holidays/US/Dates/GetChristmasDay" name="GetChristmasDay" bindingOperationName="GetChristmasDay" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="6d24dfcd-e6cf-4786-b857-55a335abaf34" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.holidaywebservice.com/Holidays/US/Dates/USHolidayDates.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:dat="http://www.27seconds.com/Holidays/US/Dates/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <dat:GetChristmasDay>
+         <dat:year>?</dat:year>
+      </dat:GetChristmasDay>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.27seconds.com/Holidays/US/Dates/GetChristmasDay"/></con:call></con:operation><con:operation id="a0ddfb3e-966c-4d1f-9d49-48cc88ab49ee" isOneWay="false" action="http://www.27seconds.com/Holidays/US/Dates/GetCincoDeMayo" name="GetCincoDeMayo" bindingOperationName="GetCincoDeMayo" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="b14137ca-3ea7-45f8-9b92-25138d1bc734" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.holidaywebservice.com/Holidays/US/Dates/USHolidayDates.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:dat="http://www.27seconds.com/Holidays/US/Dates/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <dat:GetCincoDeMayo>
+         <dat:year>?</dat:year>
+      </dat:GetCincoDeMayo>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.27seconds.com/Holidays/US/Dates/GetCincoDeMayo"/></con:call></con:operation><con:operation id="5a4ec0d6-b945-41f0-b978-323b81b41dfb" isOneWay="false" action="http://www.27seconds.com/Holidays/US/Dates/GetColumbusDay" name="GetColumbusDay" bindingOperationName="GetColumbusDay" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="ad8dc2eb-7558-4ea3-9a75-dd1d2b04fd5b" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.holidaywebservice.com/Holidays/US/Dates/USHolidayDates.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:dat="http://www.27seconds.com/Holidays/US/Dates/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <dat:GetColumbusDay>
+         <dat:year>?</dat:year>
+      </dat:GetColumbusDay>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.27seconds.com/Holidays/US/Dates/GetColumbusDay"/></con:call></con:operation><con:operation id="c6c9c8ba-47a9-472c-80bd-47cf197812d7" isOneWay="false" action="http://www.27seconds.com/Holidays/US/Dates/GetEaster" name="GetEaster" bindingOperationName="GetEaster" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="a41efd0a-5bd7-4d74-822a-7da249829ff3" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.holidaywebservice.com/Holidays/US/Dates/USHolidayDates.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:dat="http://www.27seconds.com/Holidays/US/Dates/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <dat:GetEaster>
+         <dat:year>1977</dat:year>
+      </dat:GetEaster>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.27seconds.com/Holidays/US/Dates/GetEaster"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="6ab1247a-d11a-43c4-8784-0a95d0bd2378" isOneWay="false" action="http://www.27seconds.com/Holidays/US/Dates/GetFathersDay" name="GetFathersDay" bindingOperationName="GetFathersDay" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="287332fc-1cc9-4a9a-996e-631128df3671" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.holidaywebservice.com/Holidays/US/Dates/USHolidayDates.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:dat="http://www.27seconds.com/Holidays/US/Dates/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <dat:GetFathersDay>
+         <dat:year>?</dat:year>
+      </dat:GetFathersDay>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.27seconds.com/Holidays/US/Dates/GetFathersDay"/></con:call></con:operation><con:operation id="0d1aae60-658b-4a33-85a1-5ba77636de90" isOneWay="false" action="http://www.27seconds.com/Holidays/US/Dates/GetFlagDay" name="GetFlagDay" bindingOperationName="GetFlagDay" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="40f377bb-c84c-4fd4-825a-cfc85ed7bf8b" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.holidaywebservice.com/Holidays/US/Dates/USHolidayDates.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:dat="http://www.27seconds.com/Holidays/US/Dates/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <dat:GetFlagDay>
+         <dat:year>?</dat:year>
+      </dat:GetFlagDay>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.27seconds.com/Holidays/US/Dates/GetFlagDay"/></con:call></con:operation><con:operation id="f43b8bb9-71e1-426c-bbc7-74743402b353" isOneWay="false" action="http://www.27seconds.com/Holidays/US/Dates/GetGeorgeWashingtonsBirthday" name="GetGeorgeWashingtonsBirthday" bindingOperationName="GetGeorgeWashingtonsBirthday" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="210886c5-1d0e-480a-9c3a-cb9b49ae54d3" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.holidaywebservice.com/Holidays/US/Dates/USHolidayDates.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:dat="http://www.27seconds.com/Holidays/US/Dates/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <dat:GetGeorgeWashingtonsBirthday>
+         <dat:year>?</dat:year>
+      </dat:GetGeorgeWashingtonsBirthday>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.27seconds.com/Holidays/US/Dates/GetGeorgeWashingtonsBirthday"/></con:call></con:operation><con:operation id="9a76c10b-7703-46ab-8a00-3e9b473a78b9" isOneWay="false" action="http://www.27seconds.com/Holidays/US/Dates/GetGoodFriday" name="GetGoodFriday" bindingOperationName="GetGoodFriday" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="388c7def-932f-415b-8327-5c8809ee04de" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.holidaywebservice.com/Holidays/US/Dates/USHolidayDates.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:dat="http://www.27seconds.com/Holidays/US/Dates/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <dat:GetGoodFriday>
+         <dat:year>?</dat:year>
+      </dat:GetGoodFriday>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.27seconds.com/Holidays/US/Dates/GetGoodFriday"/></con:call></con:operation><con:operation id="7893be9d-9a6c-4187-9fc0-42ee219b43a0" isOneWay="false" action="http://www.27seconds.com/Holidays/US/Dates/GetHalloweenDay" name="GetHalloweenDay" bindingOperationName="GetHalloweenDay" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="1160c780-6551-4913-9228-069ade1e60e6" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.holidaywebservice.com/Holidays/US/Dates/USHolidayDates.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:dat="http://www.27seconds.com/Holidays/US/Dates/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <dat:GetHalloweenDay>
+         <dat:year>?</dat:year>
+      </dat:GetHalloweenDay>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.27seconds.com/Holidays/US/Dates/GetHalloweenDay"/></con:call></con:operation><con:operation id="68625398-17c8-46df-a882-2a54a8657de9" isOneWay="false" action="http://www.27seconds.com/Holidays/US/Dates/GetIndependenceDay" name="GetIndependenceDay" bindingOperationName="GetIndependenceDay" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="5fdc47bf-1f06-4077-ba7c-5eef3a5ae6cd" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.holidaywebservice.com/Holidays/US/Dates/USHolidayDates.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:dat="http://www.27seconds.com/Holidays/US/Dates/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <dat:GetIndependenceDay>
+         <dat:year>?</dat:year>
+      </dat:GetIndependenceDay>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.27seconds.com/Holidays/US/Dates/GetIndependenceDay"/></con:call></con:operation><con:operation id="ae9b6065-d7a3-44ae-9efe-a5bc4cb7e940" isOneWay="false" action="http://www.27seconds.com/Holidays/US/Dates/GetLaborDay" name="GetLaborDay" bindingOperationName="GetLaborDay" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="8a99b597-f574-49f8-a35f-126706bc151e" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.holidaywebservice.com/Holidays/US/Dates/USHolidayDates.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:dat="http://www.27seconds.com/Holidays/US/Dates/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <dat:GetLaborDay>
+         <dat:year>?</dat:year>
+      </dat:GetLaborDay>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.27seconds.com/Holidays/US/Dates/GetLaborDay"/></con:call></con:operation><con:operation id="720824d5-68aa-4ea5-a2cf-69f7f08deaad" isOneWay="false" action="http://www.27seconds.com/Holidays/US/Dates/GetMartinLutherKingDay" name="GetMartinLutherKingDay" bindingOperationName="GetMartinLutherKingDay" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="7c0c5a9b-e02e-4dd7-88e2-46a7b4594099" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.holidaywebservice.com/Holidays/US/Dates/USHolidayDates.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:dat="http://www.27seconds.com/Holidays/US/Dates/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <dat:GetMartinLutherKingDay>
+         <dat:year>?</dat:year>
+      </dat:GetMartinLutherKingDay>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.27seconds.com/Holidays/US/Dates/GetMartinLutherKingDay"/></con:call></con:operation><con:operation id="348aa6ed-8414-44ec-bac2-17c129d9bb1d" isOneWay="false" action="http://www.27seconds.com/Holidays/US/Dates/GetMemorialDay" name="GetMemorialDay" bindingOperationName="GetMemorialDay" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="c8fc7a7f-e00c-44ef-807d-283d275c5ce2" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.holidaywebservice.com/Holidays/US/Dates/USHolidayDates.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:dat="http://www.27seconds.com/Holidays/US/Dates/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <dat:GetMemorialDay>
+         <dat:year>?</dat:year>
+      </dat:GetMemorialDay>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.27seconds.com/Holidays/US/Dates/GetMemorialDay"/></con:call></con:operation><con:operation id="3e19311c-5233-40d8-8fcb-c7bb7e98ff4c" isOneWay="false" action="http://www.27seconds.com/Holidays/US/Dates/GetMothersDay" name="GetMothersDay" bindingOperationName="GetMothersDay" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="e7b88615-4b5a-4750-99d1-9077b3bdc2b6" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.holidaywebservice.com/Holidays/US/Dates/USHolidayDates.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:dat="http://www.27seconds.com/Holidays/US/Dates/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <dat:GetMothersDay>
+         <dat:year>?</dat:year>
+      </dat:GetMothersDay>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.27seconds.com/Holidays/US/Dates/GetMothersDay"/></con:call></con:operation><con:operation id="d5ff0756-c535-4153-ab32-7bbde47913c2" isOneWay="false" action="http://www.27seconds.com/Holidays/US/Dates/GetNewYear" name="GetNewYear" bindingOperationName="GetNewYear" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="48cf4924-b2e4-49cb-a352-6ba42d4596f2" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.holidaywebservice.com/Holidays/US/Dates/USHolidayDates.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:dat="http://www.27seconds.com/Holidays/US/Dates/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <dat:GetNewYear>
+         <dat:year>?</dat:year>
+      </dat:GetNewYear>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.27seconds.com/Holidays/US/Dates/GetNewYear"/></con:call></con:operation><con:operation id="027d068c-d569-45be-a653-def330254068" isOneWay="false" action="http://www.27seconds.com/Holidays/US/Dates/GetNewYearsEve" name="GetNewYearsEve" bindingOperationName="GetNewYearsEve" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="53250c85-6fba-4242-b0ab-c11752eccf8b" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.holidaywebservice.com/Holidays/US/Dates/USHolidayDates.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:dat="http://www.27seconds.com/Holidays/US/Dates/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <dat:GetNewYearsEve>
+         <dat:year>?</dat:year>
+      </dat:GetNewYearsEve>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.27seconds.com/Holidays/US/Dates/GetNewYearsEve"/></con:call></con:operation><con:operation id="79be2dee-41bf-443e-963a-e0a74301a865" isOneWay="false" action="http://www.27seconds.com/Holidays/US/Dates/GetPresidentsDay" name="GetPresidentsDay" bindingOperationName="GetPresidentsDay" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="99aec581-8439-45eb-b6f6-7ae3f2b99e65" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.holidaywebservice.com/Holidays/US/Dates/USHolidayDates.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:dat="http://www.27seconds.com/Holidays/US/Dates/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <dat:GetPresidentsDay>
+         <dat:year>?</dat:year>
+      </dat:GetPresidentsDay>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.27seconds.com/Holidays/US/Dates/GetPresidentsDay"/></con:call></con:operation><con:operation id="dc61ed5d-46e3-4d66-a22a-ecc63e2c7ac2" isOneWay="false" action="http://www.27seconds.com/Holidays/US/Dates/GetSaintPatricksDay" name="GetSaintPatricksDay" bindingOperationName="GetSaintPatricksDay" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="9005026d-6ba1-4eb6-a9e0-0d72fac03128" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.holidaywebservice.com/Holidays/US/Dates/USHolidayDates.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:dat="http://www.27seconds.com/Holidays/US/Dates/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <dat:GetSaintPatricksDay>
+         <dat:year>?</dat:year>
+      </dat:GetSaintPatricksDay>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.27seconds.com/Holidays/US/Dates/GetSaintPatricksDay"/></con:call></con:operation><con:operation id="dbc0d057-6098-4262-ac49-310c36378dd3" isOneWay="false" action="http://www.27seconds.com/Holidays/US/Dates/GetThanksgivingDay" name="GetThanksgivingDay" bindingOperationName="GetThanksgivingDay" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="623f05f8-0398-4c80-951d-14e71b4ad7ad" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.holidaywebservice.com/Holidays/US/Dates/USHolidayDates.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:dat="http://www.27seconds.com/Holidays/US/Dates/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <dat:GetThanksgivingDay>
+         <dat:year>?</dat:year>
+      </dat:GetThanksgivingDay>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.27seconds.com/Holidays/US/Dates/GetThanksgivingDay"/></con:call></con:operation><con:operation id="4d51448f-ecb5-4835-9ec6-49bd4c5a090f" isOneWay="false" action="http://www.27seconds.com/Holidays/US/Dates/GetValentinesDay" name="GetValentinesDay" bindingOperationName="GetValentinesDay" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="090590ad-e363-4813-9278-81f58777e499" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.holidaywebservice.com/Holidays/US/Dates/USHolidayDates.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:dat="http://www.27seconds.com/Holidays/US/Dates/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <dat:GetValentinesDay>
+         <dat:year>?</dat:year>
+      </dat:GetValentinesDay>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.27seconds.com/Holidays/US/Dates/GetValentinesDay"/></con:call></con:operation><con:operation id="d91744aa-ccf2-40a6-b64f-edbf5c197b02" isOneWay="false" action="http://www.27seconds.com/Holidays/US/Dates/GetVeteransDay" name="GetVeteransDay" bindingOperationName="GetVeteransDay" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="e55faa33-db64-4b6a-b11c-37a2de3e8315" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.holidaywebservice.com/Holidays/US/Dates/USHolidayDates.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:dat="http://www.27seconds.com/Holidays/US/Dates/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <dat:GetVeteransDay>
+         <dat:year>?</dat:year>
+      </dat:GetVeteransDay>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.27seconds.com/Holidays/US/Dates/GetVeteransDay"/></con:call></con:operation></con:interface><con:testSuite id="2adca6ad-2b40-4c4e-9991-7966b4125655" name="HolidayTestSuite"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="446cfa12-9494-406a-8623-2043f80d8cba" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="EasterTestCase" searchProperties="true"><con:settings/><con:testStep type="request" id="4452eb85-20d6-4b4a-b9b7-29db0bdadb2f" name="GetEaster - Request 1"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>USHolidayDatesSoap</con:interface><con:operation>GetEaster</con:operation><con:request name="GetEaster - Request 1" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType="" id="0f703197-876f-488e-9ca8-c744899a95ff"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.holidaywebservice.com/Holidays/US/Dates/USHolidayDates.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:dat="http://www.27seconds.com/Holidays/US/Dates/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <dat:GetEaster>
+         <dat:year>${#TestCase#year}</dat:year>
+      </dat:GetEaster>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="cca713db-f9dd-492d-afa8-bfcac92d0bd6" name="SOAP Response"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.27seconds.com/Holidays/US/Dates/GetEaster"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="groovy" name="LogYearToTest" id="7dc176e1-d33e-4aa3-be30-5c8391eb15f8"><con:settings/><con:config><script>def testCase = testRunner.testCase
+def year = testCase.getPropertyValue('year')
+log.info("testing with data: ${year}")</script></con:config></con:testStep><con:testStep type="transfer" name="EasterDate" id="32895044-8bc1-4468-a730-003d663cedf5"><con:settings/><con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>EasterDate</con:name><con:sourceType>Response</con:sourceType><con:sourceStep>GetEaster - Request 1</con:sourceStep><con:sourcePath>declare namespace dat = 'http://www.27seconds.com/Holidays/US/Dates/';
+//dat:GetEasterResponse[1]/dat:GetEasterResult[1]</con:sourcePath><con:targetType>dateToParse</con:targetType><con:targetStep>#TestCase#</con:targetStep><con:upgraded>true</con:upgraded></con:transfers></con:config></con:testStep><con:testStep type="groovy" name="ParseDate" id="f62ba733-1833-4757-913f-02ae4c06abdb"><con:settings/><con:config><script>import static java.util.Calendar.*
+def testCase = testRunner.testCase
+def dateStr = testCase.getPropertyValue('dateToParse')
+def date = Date.parse("yyyy-MM-dd'T'HH:mm:ss", dateStr)
+int parsedYear = date.toCalendar().get(YEAR)
+int currentYear = new Date().toCalendar().get(YEAR)
+assert (currentYear - parsedYear == 0)
+</script></con:config></con:testStep><con:properties><con:property><con:name>year</con:name><con:value>2016</con:value></con:property><con:property><con:name>dateToParse</con:name><con:value>2016-03-27T00:00:00</con:value></con:property></con:properties></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/></con:soapui-project>
