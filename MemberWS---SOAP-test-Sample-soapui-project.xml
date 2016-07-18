@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:soapui-project id="16736fb8-9bba-401c-a544-15c068862f26" activeEnvironment="Default" name="MemberWS - SOAP test Sample" resourceRoot="" soapui-version="5.2.1" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.actions.iface.tools.soapui.TestRunnerAction@values-local"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+<con:soapui-project id="16736fb8-9bba-401c-a544-15c068862f26" activeEnvironment="Default" name="MemberWS - SOAP test Sample" resourceRoot="" soapui-version="5.2.1" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.actions.iface.tools.soapui.TestRunnerAction@values-local"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
   <con:entry key="Report Format(s)" value=""/>
   <con:entry key="Host:Port" value=""/>
   <con:entry key="Export JUnit Results" value="false"/>
@@ -147,7 +147,7 @@
       </soap:register>
    </soapenv:Body>
 </soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://soap.sample.ninjav.org/MemberWS/register"/><con:wsrmConfig version="1.2"/></con:call></con:operation></con:interface><con:testSuite id="28b375b3-1aef-42c2-b15b-34e87c5301a7" name="MemberSuite"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.panels.testcase.JTestRunLog$OptionsForm@max_rows">1000</con:setting><con:setting id="com.eviware.soapui.impl.wsdl.panels.testcase.JTestRunLog$OptionsForm@errors_only">false</con:setting></con:settings><con:runType>SEQUENTIAL</con:runType><con:testCase id="524a9d88-c5ad-4125-97f1-a1da1c290de3" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="givenMembers_canFindMembers" searchProperties="true"><con:settings/><con:testStep type="jdbc" name="Clear Database" id="e9edd698-930c-4094-b1ec-9da046f812c6"><con:settings/><con:config xsi:type="con:JdbcRequestTestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:driver>com.mysql.jdbc.Driver</con:driver><con:connectionString>jdbc:mysql://localhost:3306/mysql?user=root&amp;password=wopniep</con:connectionString><con:query>delete from Member
-</con:query><con:properties/></con:config></con:testStep><con:testStep type="jdbc" name="Seed Database" id="245e36ac-4f44-4647-a62f-948d3d5c9523"><con:settings/><con:config xsi:type="con:JdbcRequestTestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:driver>com.mysql.jdbc.Driver</con:driver><con:connectionString>jdbc:mysql://localhost:3306/mysql?user=root&amp;password=wopniep</con:connectionString><con:query>insert into Member (id, name, email, phone_number) values (0, 'John Smith', 'john.smith@mailinator.com', '2125551212') </con:query><con:properties/></con:config></con:testStep><con:testStep type="request" name="ListAllMembers" id="7808c400-8132-41d4-a275-9cd1638b9d49"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>MemberWSSoapBinding</con:interface><con:operation>listAllMembers</con:operation><con:request name="ListAllMembers" id="1d1436a8-e643-433f-8e68-0307667c8848"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://monster:8080/SampleSOAPApp/MemberWS</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:soap="http://soap.sample.ninjav.org/">
+</con:query><con:properties/></con:config></con:testStep><con:testStep type="jdbc" name="Seed Database" id="245e36ac-4f44-4647-a62f-948d3d5c9523"><con:settings/><con:config xsi:type="con:JdbcRequestTestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:driver>com.mysql.jdbc.Driver</con:driver><con:connectionString>jdbc:mysql://localhost:3306/mysql?user=root&amp;password=wopniep</con:connectionString><con:query>insert into Member (id, name, email, phone_number) values (0, 'John Smith', 'john.smith@mailinator.com', '2125551212') </con:query><con:properties/></con:config></con:testStep><con:testStep type="request" name="ListAllMembers" id="7808c400-8132-41d4-a275-9cd1638b9d49"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>MemberWSSoapBinding</con:interface><con:operation>listAllMembers</con:operation><con:request name="ListAllMembers" id="1d1436a8-e643-433f-8e68-0307667c8848"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8080/SampleSOAPApp/MemberWS</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:soap="http://soap.sample.ninjav.org/">
    <soapenv:Header/>
    <soapenv:Body>
       <soap:listAllMembers/>
@@ -157,7 +157,7 @@
 def holder = new XmlHolder(messageExchange.responseContentAsXml)
 
 assert holder["//members"] != null
-</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="91af0268-a104-4d3e-9888-f06453b12c5d" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="givenValidMember_canAddMember" searchProperties="true"><con:settings/><con:testStep type="jdbc" name="Clear Database" id="545a1f2e-e10a-47ee-89ab-faa4e0ee28fe"><con:settings/><con:config xsi:type="con:JdbcRequestTestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:driver>com.mysql.jdbc.Driver</con:driver><con:connectionString>jdbc:mysql://localhost:3306/mysql?user=root&amp;password=wopniep</con:connectionString><con:query>delete from Member</con:query><con:properties/></con:config></con:testStep><con:testStep type="properties" name="Given" id="b457a385-5878-4e35-82f8-d84d8e370a79"><con:settings/><con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:properties><con:property><con:name>name</con:name><con:value>Alan Pickard</con:value></con:property><con:property><con:name>email</con:name><con:value>al.ninjav@gmail.com</con:value></con:property><con:property><con:name>phone</con:name><con:value>0820636760</con:value></con:property></con:properties></con:config></con:testStep><con:testStep type="request" name="RegisterMember" id="cf0adceb-3025-4660-9db6-7720584fbaf9"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>MemberWSSoapBinding</con:interface><con:operation>register</con:operation><con:request name="RegisterMember" id="f46f3789-eb15-4490-b651-64e1805c9f71"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://monster:8080/SampleSOAPApp/MemberWS</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:soap="http://soap.sample.ninjav.org/">
+</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="91af0268-a104-4d3e-9888-f06453b12c5d" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="givenValidMember_canAddMember" searchProperties="true"><con:settings/><con:testStep type="jdbc" name="Clear Database" id="545a1f2e-e10a-47ee-89ab-faa4e0ee28fe"><con:settings/><con:config xsi:type="con:JdbcRequestTestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:driver>com.mysql.jdbc.Driver</con:driver><con:connectionString>jdbc:mysql://localhost:3306/mysql?user=root&amp;password=wopniep</con:connectionString><con:query>delete from Member</con:query><con:properties/></con:config></con:testStep><con:testStep type="properties" name="Given" id="b457a385-5878-4e35-82f8-d84d8e370a79"><con:settings/><con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:properties><con:property><con:name>name</con:name><con:value>Alan Pickard</con:value></con:property><con:property><con:name>email</con:name><con:value>al.ninjav@gmail.com</con:value></con:property><con:property><con:name>phone</con:name><con:value>0820636760</con:value></con:property></con:properties></con:config></con:testStep><con:testStep type="request" name="RegisterMember" id="cf0adceb-3025-4660-9db6-7720584fbaf9"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>MemberWSSoapBinding</con:interface><con:operation>register</con:operation><con:request name="RegisterMember" id="f46f3789-eb15-4490-b651-64e1805c9f71"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8080/SampleSOAPApp/MemberWS</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:soap="http://soap.sample.ninjav.org/">
    <soapenv:Header/>
    <soapenv:Body>
       <soap:register>
@@ -187,4 +187,43 @@ def sql = Sql.newInstance(dbpath, dbuser, dbpass, dbdriver)
 def res = sql.firstRow('select * from Member')
 
 assert res != null &amp;&amp; res[0] != null
-</script></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/></con:soapui-project>
+</script></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="6f9b61be-010e-4741-b2bd-ba6bec3cc37f" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="dbUnit_givenValidMember_canAddMember" searchProperties="true"><con:settings/><con:testStep type="groovy" name="Show Environment" id="893fe4ea-e260-4ff9-875d-31e91cc8128b"><con:settings/><con:config><script>def groovyUtils = new com.eviware.soapui.support.GroovyUtils(context)
+def projectDir = groovyUtils.projectPath
+
+def req = new XmlSlurper().parseText(mockRequest.requestContent)
+if (req =~ "CategoryA") {
+    context.responsefile = new File(projectDir, "Test_Files/ID_List_CategoryA.xml").text
+}
+else {
+    context.responsefile = new File(projectDir, "Test_Files/ID_List_CategoryB.xml").text
+}</script></con:config></con:testStep><con:testStep type="jdbc" name="Clear Database" id="61f3453a-ab4f-4121-ba15-5b81529a3d27"><con:settings/><con:config xsi:type="con:JdbcRequestTestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:driver>com.mysql.jdbc.Driver</con:driver><con:connectionString>jdbc:mysql://localhost:3306/mysql?user=root&amp;password=wopniep</con:connectionString><con:query>delete from Member</con:query><con:properties/></con:config></con:testStep><con:testStep type="groovy" name="Seed Database" id="9ce07921-7f52-448c-9dbb-877e5a0488bb"><con:settings/><con:config><script>import groovy.xml.StreamingMarkupBuilder
+import org.dbunit.JdbcDatabaseTester
+import groovy.sql.Sql
+import org.dbunit.*
+import org.dbunit.dataset.xml.*
+import org.dbunit.database.*
+import java.io.File
+import org.dbunit.dataset.filter.*
+import org.dbunit.dataset.*
+
+def db_driver = context.expand('${#Project#db_driver}')
+def db_url = context.expand('${#Project#db_url}')
+def db_user = context.expand('${#Project#db_user}')
+def db_pass = context.expand('${#Project#db_pass}')
+
+def projectDir = context.expand('${projectDir}');
+log.info "Project dir: " + projectDir
+
+def tester = new JdbcDatabaseTester(
+	db_driver, db_url, db_user, db_pass)
+
+tester.dataSet = new FlatXmlDataSet(new File(projectDir + "/given-member.xml"))
+tester.onSetup()
+
+def expectedDataSet = new FlatXmlDataSet(new File(projectDir + "/after-insert-expected.xml"))
+def actualDataSet = new FilteredDataSet(
+	new IncludeTableFilter(['Member'] as String[]), 
+	new CachedDataSet(tester.connection.createDataSet()))
+
+Assertion.assertEquals(expectedDataSet, actualDataSet)
+</script></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties><con:property><con:name>db_url</con:name><con:value>jdbc:mysql://localhost:3306/mysql?zeroDateTimeBehavior=convertToNull</con:value></con:property><con:property><con:name>db_user</con:name><con:value>root</con:value></con:property><con:property><con:name>db_pass</con:name><con:value>wopniep</con:value></con:property><con:property><con:name>db_driver</con:name><con:value>com.mysql.jdbc.Driver</con:value></con:property></con:properties><con:wssContainer/><con:oAuth2ProfileContainer/><con:sensitiveInformation/></con:soapui-project>
