@@ -134,14 +134,9 @@
    <soapenv:Header/>
    <soapenv:Body>
       <soap:register>
-         <!--Optional:-->
          <arg0>
-            <!--Optional:-->
             <email>jan@mweb.com</email>
-            <!--Optional:-->
-            <!--Optional:-->
             <name>Jan</name>
-            <!--Optional:-->
             <phoneNumber>01234546789</phoneNumber>
          </arg0>
       </soap:register>
@@ -187,16 +182,7 @@ def sql = Sql.newInstance(dbpath, dbuser, dbpass, dbdriver)
 def res = sql.firstRow('select * from Member')
 
 assert res != null &amp;&amp; res[0] != null
-</script></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="6f9b61be-010e-4741-b2bd-ba6bec3cc37f" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="dbUnit_givenValidMember_canAddMember" searchProperties="true"><con:settings/><con:testStep type="groovy" name="Show Environment" id="893fe4ea-e260-4ff9-875d-31e91cc8128b"><con:settings/><con:config><script>def groovyUtils = new com.eviware.soapui.support.GroovyUtils(context)
-def projectDir = groovyUtils.projectPath
-
-def req = new XmlSlurper().parseText(mockRequest.requestContent)
-if (req =~ "CategoryA") {
-    context.responsefile = new File(projectDir, "Test_Files/ID_List_CategoryA.xml").text
-}
-else {
-    context.responsefile = new File(projectDir, "Test_Files/ID_List_CategoryB.xml").text
-}</script></con:config></con:testStep><con:testStep type="jdbc" name="Clear Database" id="61f3453a-ab4f-4121-ba15-5b81529a3d27"><con:settings/><con:config xsi:type="con:JdbcRequestTestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:driver>com.mysql.jdbc.Driver</con:driver><con:connectionString>jdbc:mysql://localhost:3306/mysql?user=root&amp;password=wopniep</con:connectionString><con:query>delete from Member</con:query><con:properties/></con:config></con:testStep><con:testStep type="groovy" name="Seed Database" id="9ce07921-7f52-448c-9dbb-877e5a0488bb"><con:settings/><con:config><script>import groovy.xml.StreamingMarkupBuilder
+</script></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="6f9b61be-010e-4741-b2bd-ba6bec3cc37f" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="dbUnit_givenValidMember_canAddMember" searchProperties="true"><con:settings/><con:testStep type="jdbc" name="Clear Database" id="61f3453a-ab4f-4121-ba15-5b81529a3d27"><con:settings/><con:config xsi:type="con:JdbcRequestTestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:driver>com.mysql.jdbc.Driver</con:driver><con:connectionString>jdbc:mysql://localhost:3306/mysql?user=root&amp;password=wopniep</con:connectionString><con:query>delete from Member</con:query><con:properties/></con:config></con:testStep><con:testStep type="groovy" name="Seed Database" id="9ce07921-7f52-448c-9dbb-877e5a0488bb"><con:settings/><con:config><script>import groovy.xml.StreamingMarkupBuilder
 import org.dbunit.JdbcDatabaseTester
 import groovy.sql.Sql
 import org.dbunit.*
@@ -220,10 +206,50 @@ def tester = new JdbcDatabaseTester(
 tester.dataSet = new FlatXmlDataSet(new File(projectDir + "/given-member.xml"))
 tester.onSetup()
 
-def expectedDataSet = new FlatXmlDataSet(new File(projectDir + "/after-insert-expected.xml"))
+</script></con:config></con:testStep><con:testStep type="properties" name="Given" id="d672e442-9b88-409f-9ff2-be470b593c7b"><con:settings/><con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:properties><con:property><con:name>name</con:name><con:value>Koos Komkommer</con:value></con:property><con:property><con:name>email</con:name><con:value>koos@mweb.com</con:value></con:property><con:property><con:name>phone</con:name><con:value>0123456789</con:value></con:property></con:properties></con:config></con:testStep><con:testStep type="request" name="Register Member" id="4dde678b-abc5-49da-92dc-31388027bf85"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>MemberWSSoapBinding</con:interface><con:operation>register</con:operation><con:request name="Register Member" id="b01621a5-b23a-4467-9939-27c990db4ee5"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://monster:8080/SampleSOAPApp/MemberWS</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:soap="http://soap.sample.ninjav.org/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <soap:register>
+         <arg0>
+            <email>${email}</email>
+            <name>${name}</name>
+            <phoneNumber>${phone}</phoneNumber>
+         </arg0>
+      </soap:register>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="e1cfbe02-7c35-47fa-93a1-000a899d9a7a"/><con:assertion type="Schema Compliance" id="4eb1a3f8-a937-4cb6-9aac-f3dd83d6804f"><con:configuration/></con:assertion><con:assertion type="SOAP Fault Assertion" id="4f69b721-3944-48e9-9bea-0410257e7d6f"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="groovy" name="Check Results" id="83fdfbf8-a64d-44c8-879e-f18b99c881cb"><con:settings/><con:config><script>import groovy.xml.StreamingMarkupBuilder
+import org.dbunit.JdbcDatabaseTester
+import groovy.sql.Sql
+import org.dbunit.*
+import org.dbunit.dataset.xml.*
+import org.dbunit.database.*
+import java.io.File
+import org.dbunit.dataset.filter.*
+import org.dbunit.dataset.*
+
+def db_driver = context.expand('${#Project#db_driver}')
+def db_url = context.expand('${#Project#db_url}')
+def db_user = context.expand('${#Project#db_user}')
+def db_pass = context.expand('${#Project#db_pass}')
+
+def projectDir = context.expand('${projectDir}');
+log.info "Project dir: " + projectDir
+
+def tester = new JdbcDatabaseTester(
+	db_driver, db_url, db_user, db_pass)
+
+def expectedDataSet = new FlatXmlDataSet(
+	new File(projectDir + "/after-insert-expected.xml"))
+
+
 def actualDataSet = new FilteredDataSet(
 	new IncludeTableFilter(['Member'] as String[]), 
 	new CachedDataSet(tester.connection.createDataSet()))
 
-Assertion.assertEquals(expectedDataSet, actualDataSet)
+def ignoreCols = ['id'] as String[]
+
+ITable expectedTable = expectedDataSet.getTable('Member')
+ITable actualTable = actualDataSet.getTable('Member')
+
+Assertion.assertEqualsIgnoreCols(expectedTable, actualTable, ignoreCols)
 </script></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties><con:property><con:name>db_url</con:name><con:value>jdbc:mysql://localhost:3306/mysql?zeroDateTimeBehavior=convertToNull</con:value></con:property><con:property><con:name>db_user</con:name><con:value>root</con:value></con:property><con:property><con:name>db_pass</con:name><con:value>wopniep</con:value></con:property><con:property><con:name>db_driver</con:name><con:value>com.mysql.jdbc.Driver</con:value></con:property></con:properties><con:wssContainer/><con:oAuth2ProfileContainer/><con:sensitiveInformation/></con:soapui-project>
