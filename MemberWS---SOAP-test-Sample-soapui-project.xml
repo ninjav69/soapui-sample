@@ -206,7 +206,7 @@ def tester = new JdbcDatabaseTester(
 tester.dataSet = new FlatXmlDataSet(new File(projectDir + "/given-member.xml"))
 tester.onSetup()
 
-</script></con:config></con:testStep><con:testStep type="properties" name="Given" id="d672e442-9b88-409f-9ff2-be470b593c7b"><con:settings/><con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:properties><con:property><con:name>name</con:name><con:value>Koos Komkommer</con:value></con:property><con:property><con:name>email</con:name><con:value>koos@mweb.com</con:value></con:property><con:property><con:name>phone</con:name><con:value>0123456789</con:value></con:property></con:properties></con:config></con:testStep><con:testStep type="request" name="Register Member" id="4dde678b-abc5-49da-92dc-31388027bf85"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>MemberWSSoapBinding</con:interface><con:operation>register</con:operation><con:request name="Register Member" id="b01621a5-b23a-4467-9939-27c990db4ee5"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://monster:8080/SampleSOAPApp/MemberWS</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:soap="http://soap.sample.ninjav.org/">
+</script></con:config></con:testStep><con:testStep type="properties" name="Given" id="d672e442-9b88-409f-9ff2-be470b593c7b"><con:settings/><con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:properties><con:property><con:name>name</con:name><con:value>Koos Komkommer</con:value></con:property><con:property><con:name>email</con:name><con:value>koos@mweb.com</con:value></con:property><con:property><con:name>phone</con:name><con:value>0123456789</con:value></con:property></con:properties></con:config></con:testStep><con:testStep type="request" name="Register Member" id="4dde678b-abc5-49da-92dc-31388027bf85"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>MemberWSSoapBinding</con:interface><con:operation>register</con:operation><con:request name="Register Member" id="b01621a5-b23a-4467-9939-27c990db4ee5"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8080/SampleSOAPApp/MemberWS</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:soap="http://soap.sample.ninjav.org/">
    <soapenv:Header/>
    <soapenv:Body>
       <soap:register>
@@ -240,6 +240,76 @@ def tester = new JdbcDatabaseTester(
 
 def expectedDataSet = new FlatXmlDataSet(
 	new File(projectDir + "/after-insert-expected.xml"))
+
+
+def actualDataSet = new FilteredDataSet(
+	new IncludeTableFilter(['Member'] as String[]), 
+	new CachedDataSet(tester.connection.createDataSet()))
+
+def ignoreCols = ['id'] as String[]
+
+ITable expectedTable = expectedDataSet.getTable('Member')
+ITable actualTable = actualDataSet.getTable('Member')
+
+Assertion.assertEqualsIgnoreCols(expectedTable, actualTable, ignoreCols)
+</script></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="30886d43-8d5d-4afe-9689-bb2aafa4aea7" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="dbUnit_givenDuplicateMember_cannotAddMember" searchProperties="true"><con:settings/><con:testStep type="jdbc" name="Clear Database" id="6c594b16-9417-46bf-a63a-13b75fa5f974"><con:settings/><con:config xsi:type="con:JdbcRequestTestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:driver>com.mysql.jdbc.Driver</con:driver><con:connectionString>jdbc:mysql://localhost:3306/mysql?user=root&amp;password=wopniep</con:connectionString><con:query>delete from Member</con:query><con:properties/></con:config></con:testStep><con:testStep type="groovy" name="Seed Database" id="ef076077-545e-4ec1-ba51-fde28082bc6a"><con:settings/><con:config><script>//import groovy.xml.StreamingMarkupBuilder
+import org.dbunit.JdbcDatabaseTester
+//import groovy.sql.Sql
+import org.dbunit.*
+import org.dbunit.dataset.xml.*
+//import org.dbunit.database.*
+import java.io.File
+//import org.dbunit.dataset.filter.*
+//import org.dbunit.dataset.*
+
+def db_driver = context.expand('${#Project#db_driver}')
+def db_url = context.expand('${#Project#db_url}')
+def db_user = context.expand('${#Project#db_user}')
+def db_pass = context.expand('${#Project#db_pass}')
+
+def projectDir = context.expand('${projectDir}');
+log.info "Project dir: " + projectDir
+
+def tester = new JdbcDatabaseTester(
+	db_driver, db_url, db_user, db_pass)
+
+tester.dataSet = new FlatXmlDataSet(new File(projectDir + "/given-member.xml"))
+tester.onSetup()
+
+</script></con:config></con:testStep><con:testStep type="properties" name="Given" id="471dc1a0-ece1-49d8-96d4-732e0de7ee91"><con:settings/><con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:properties><con:property><con:name>name</con:name><con:value>Alan Pickard</con:value></con:property><con:property><con:name>email</con:name><con:value>al.ninjav@gmail.com</con:value></con:property><con:property><con:name>phone</con:name><con:value>0820636760</con:value></con:property></con:properties></con:config></con:testStep><con:testStep type="request" name="Register Member" id="27537ea7-0531-4883-ac82-b0d398db9050"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>MemberWSSoapBinding</con:interface><con:operation>register</con:operation><con:request name="Register Member" id="37c97e35-91ff-40b9-9804-e8acf7c2d9eb"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8080/SampleSOAPApp/MemberWS</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:soap="http://soap.sample.ninjav.org/">
+   <soapenv:Header/>
+   <soapenv:Body>
+       <soap:register>
+         <arg0>
+            <email>${email}</email>
+            <name>${name}</name>
+            <phoneNumber>${phone}</phoneNumber>
+         </arg0>
+      </soap:register>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="8489dd9c-c270-43d1-9d87-6a7c35fcf547"/><con:assertion type="Not SOAP Fault Assertion" id="b4eec426-a27d-40b7-a816-1c64714e1466" name="SOAP Fault"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="groovy" name="Check Results" id="17ff98c9-b55c-43ce-a311-4a961a3d0ab7"><con:settings/><con:config><script>import groovy.xml.StreamingMarkupBuilder
+import org.dbunit.JdbcDatabaseTester
+//import groovy.sql.Sql
+import org.dbunit.*
+import org.dbunit.dataset.xml.*
+//import org.dbunit.database.*
+import java.io.File
+import org.dbunit.dataset.filter.*
+import org.dbunit.dataset.*
+
+def db_driver = context.expand('${#Project#db_driver}')
+def db_url = context.expand('${#Project#db_url}')
+def db_user = context.expand('${#Project#db_user}')
+def db_pass = context.expand('${#Project#db_pass}')
+
+def projectDir = context.expand('${projectDir}');
+log.info "Project dir: " + projectDir
+
+def tester = new JdbcDatabaseTester(
+	db_driver, db_url, db_user, db_pass)
+
+def expectedDataSet = new FlatXmlDataSet(
+	new File(projectDir + "/given-member.xml"))
 
 
 def actualDataSet = new FilteredDataSet(
